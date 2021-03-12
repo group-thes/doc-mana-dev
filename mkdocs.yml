@@ -1,5 +1,4 @@
 site_name: Mana
 nav:
     - Home: index.md
-    - About: about.md
 theme: readthedocs
