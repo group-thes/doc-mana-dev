@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# Welcome to Mana API Management
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+![a](img/Cover.png)
 
 ## Commands
 
