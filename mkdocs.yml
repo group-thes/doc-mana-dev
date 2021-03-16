@@ -1,4 +1,6 @@
 site_name: Mana
 nav:
     - Home: index.md
+    - Using Adhoc: Quickstarts/Adhoc.md
+    - Public sandbox: Quickstarts/Public_sandbox.md
 theme: readthedocs
