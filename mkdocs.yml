@@ -1,4 +1,19 @@
 site_name: Mana
 nav:
-    - Home: index.md
+    - Introduction: 
+        - aaa1: 'index.md'
+        - aaa2: 'index.md'
+    - Quickstarts:
+        - bbb1: 'index.md'
+        - bbb2: 'index.md'
+    - Tutorial:
+        - Using Adhoc: Tutorial/Adhoc.md
+        - Environments: Tutorial/Environments.md
+    - Plan & Pricing:
+        - ddd1: 'index.md'
+        - ddd2: 'index.md'
+    - FAQ:
+        - eee1: 'index.md'
+        - eee2: 'index.md'
 theme: readthedocs
+
