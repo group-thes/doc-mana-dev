@@ -8,7 +8,7 @@
 เป็นสภาวะที่ถูกนำไปใช้จริงกับ User หมายถึงมีการทดสอบระบบและข้อมูลเป็นที่เรียบร้อยแล้วว่าไม่พบข้อผิดพลาดใดๆเพราะหากใช้ในเชิงธุรกิจจะส่งผลกระทบกับองค์กร
 
 ### The default environment
-โดยปกติเมื่อนักพัฒนาทำการสร้าง สร้าง Software Ba ใน Mana Application เป็นที่เรียบร้อยแล้ว ค่าเริ่มต้นของ Environment ที่นักพัฒนาได้รับจะสามารถเข้าใช้งาน Sandbox environments ได้ทันที ซึ่งสามารถดูการเปลี่ยน [Production environments](https://google.com)
+โดยปกติเมื่อนักพัฒนาทำการสร้าง Software Ba ใน Mana Application เป็นที่เรียบร้อยแล้ว Environment ที่นักพัฒนาสามารถเข้าใช้งานได้ทันทีคือ Sandbox environments  ซึ่งนักพัฒนาสามารถเปลี่ยนแปลง Environment ให้เป็น [Production environments ได้ในภายหลัง](https://google.com)
 
 - Environments Types (https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/environment-types)
     
