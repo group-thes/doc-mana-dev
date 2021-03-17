@@ -5,23 +5,28 @@
 บริการจัดการกับ services ที่มี โดยจะมีเครื่องมือต่างๆสำหรับจัดการ service เตรียมไว้ให้ใช้บริการ
 
 ## [Business Management](https://mana-sand-portal.developer.azure-api.net "Link To sandbox")
-เกี่ยวกับ BA
+
+บริการจัดการธุรกิจของคุณ ทั้งการควบคุมธุรกิจ จัดการพนักงาน หรือการเงินภายในธุรกิจเป็นต้น
 
 ## [Membership Management](https://mana-sand-portal.developer.azure-api.net "Link To sandbox")
 
-เกี่ยวกับระบบสมาชิก
+บริการจัดการระบบสมาชิก ที่จะทำให้คุณจัดการกับสมาชิกที่ติดตาม
+
 ## [Products and Orders](https://mana-sand-portal.developer.azure-api.net "Link To sandbox")
 
-เกี่ยวกับสินค้า และการสั่งซื้อ
+บริการจัดการข้อมูลสินค้า และการสั่งซื้อของท่าน โดยท่านจะสามารถจัดการสินค้าและการสั่งซื้อได้ง่าย สะดวก และรวดเร็ว
+
 ## [Promotions](https://mana-sand-portal.developer.azure-api.net "Link To sandbox")
 
-เกี่ยวกับโปรโมชั่นที่จะจัด
+บริการจัดการโปรโมชั่น ทั้งการสร้าง จัดการ และดูผลสรุปของของโปรโมชั่นของคุณได้อย่างสะดวก
 
 ## [Transaction Management](https://mana-sand-portal.developer.azure-api.net "Link To sandbox")
-เกี่ยวกับการทำธุรกรรมต่างๆ
+
+บริการจัดการการทำธุรกรรมต่างๆ มีทั้งการตรวจสอบธุรกรรมทางการเงินต่างๆ การตรวจสอบประวัติการรับเงินต่างๆ เป็นต้น
 
 ## [Interaction and Messaging](https://mana-sand-portal.developer.azure-api.net "Link To sandbox")
 
-เกี่ยวกับการส่งข้อความและรับข้อความ
+บริการจัดการส่งข้อความไปยังผู้ที่สมัครสมาชิกไว้กับร้านค้าของท่าน ทั้งการส่ง notfication หรือ messageing ต่างๆ ไปยังผู้ที่สมัครสมาชิกไว้กับร้านค้าของท่าน
 ## [Data Analytics](https://mana-sand-portal.developer.azure-api.net "Link To sandbox")
-เดี่ยวกับการวิเคราะห์ข้อมูล
+
+บริการวิเคราะห์ข้อมูล สำหรับธุรกิจของท่าน ทำให้การทำธุรกิจต่างๆของคุณ สามารถดำเนินไปได้ตามที่ท่านต้องการโดยมีข้อมูลในการตัดสินใจ
