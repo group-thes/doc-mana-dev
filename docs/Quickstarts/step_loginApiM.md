@@ -1,9 +1,9 @@
 ใช้ flow Login with mana
 
-![a](imgs/slm1.PNG)
+![a](../img/Quickstarts/slm1.PNG)
 
-![a](imgs/slm2.PNG)
+![a](../img/Quickstarts/slm2.PNG)
 
-![a](imgs/slm3.PNG)
+![a](../img/Quickstarts/slm3.PNG)
 
-![a](imgs/slm4.PNG)
+![a](../img/Quickstarts/slm4.PNG)
