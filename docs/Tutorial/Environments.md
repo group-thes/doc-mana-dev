@@ -9,6 +9,3 @@
 
 ### The default environment
 โดยปกติเมื่อนักพัฒนาทำการสร้าง Software Ba ใน Mana Application เป็นที่เรียบร้อยแล้ว Environment ที่นักพัฒนาสามารถเข้าใช้งานได้ทันทีคือ Sandbox environments  ซึ่งนักพัฒนาสามารถเปลี่ยนแปลง Environment ให้เป็น [Production environments ได้ในภายหลัง](https://google.com)
-
-- Environments Types (https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/environment-types)
-    
