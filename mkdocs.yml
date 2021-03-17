@@ -9,11 +9,12 @@ nav:
     - Tutorial:
         - Using Adhoc: Tutorial/Adhoc.md
         - Environments: Tutorial/Environments.md
+    - APIS : 'APIs/Api_capabilities.md'
     - Plan & Pricing:
         - ddd1: 'index.md'
         - ddd2: 'index.md'
     - FAQ:
-        - eee1: 'index.md'
+        - eee1: 'FAQ/faq.md'
         - eee2: 'index.md'
 theme: readthedocs
 
