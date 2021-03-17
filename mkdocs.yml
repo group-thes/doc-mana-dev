@@ -13,7 +13,6 @@ nav:
         - Environments: Tutorial/Environments.md
         - From Sandbox to Production: Tutorial/FromSandbox2Production.md
     - Plan & Pricing: 'Plan&Pricing/Plan&Pricing.md'
-    - FAQ:
-        - eee1: 'FAQ/faq.md'
+    - FAQ: 'FAQ/faq.md'
 theme: readthedocs
 
