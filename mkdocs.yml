@@ -7,7 +7,7 @@ nav:
         - GettingStarted: 
             - ขั้นตอนการสมัครร่วมงานกับมานะ: 'Quickstarts/GettingStarted.md'
             - login เข้า apiM: 'Quickstarts/step_loginApiM.md'
-        - APIS : 'APIs/Api_capabilities.md'
+        - APIS : 'Quickstarts/APIs.md'
     - Tutorial:
         - Using Adhoc: Tutorial/Adhoc.md
         - Environments: Tutorial/Environments.md
