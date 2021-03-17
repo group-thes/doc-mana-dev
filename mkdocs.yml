@@ -9,6 +9,7 @@ nav:
     - Tutorial:
         - Using Adhoc: Tutorial/Adhoc.md
         - Environments: Tutorial/Environments.md
+        - From Sandbox to Production: Tutorial/FromSandbox2Production.md
     - Plan & Pricing:
         - ddd1: 'index.md'
         - ddd2: 'index.md'
