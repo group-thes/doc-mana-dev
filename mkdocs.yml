@@ -2,7 +2,7 @@ site_name: Mana
 nav:
     - Introduction: 
         - Overview: 'Introduction/Overview.md'
-        - แนะนำ sandbox: 'Introduction/RecommendSandbox.md'
+        # - แนะนำ sandbox: 'Introduction/RecommendSandbox.md'
     - Quickstarts:
         - GettingStarted: 
             - ขั้นตอนการสมัครร่วมงานกับมานะ: 'Quickstarts/GettingStarted.md'
