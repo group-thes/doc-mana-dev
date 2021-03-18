@@ -37,7 +37,7 @@
     - การเข้าใช้งาน ManaDevPortal ในฐานะนักพัฒนานั้น จะมีการจำกัดเข้าชม อยู่ที่ 30 นาที
 
 13. มีการจำกัดอัตราการส่งข้อมูลหรือไม่ ?
-    - xxx
+    - ทาง ManaDevPortal จำกัดอัตราการส่งข้อมูลอยู๋ที่ 500 requests/sec
 
 14. ManaDevPortal รับรอง transaction ได้มากเพียงใด ?
-    - xxx
+    - ทาง ManaDevPortal รองรับ transaction ได้มากที่สุด  1,000  transaction/sec
