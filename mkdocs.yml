@@ -1,18 +1,22 @@
 site_name: Mana
 nav:
-    - Introduction: 
+    - INTRODUCTION: 
         - Overview: 'Introduction/Overview.md'
-        # - แนะนำ sandbox: 'Introduction/RecommendSandbox.md'
-    - Quickstarts:
+        - Development Cycle: 'Introduction/DevelopmentCycle.md'
+        - Environments: Introduction/Environments.md
+    - QUICKSTARTS: 
         - GettingStarted: 
             - ขั้นตอนการสมัครร่วมงานกับมานะ: 'Quickstarts/GettingStarted.md'
             - การเข้าใช้งาน API-Management: 'Quickstarts/step_loginApiM.md'
-        - APIS : 'Quickstarts/APIs.md'
-    - Tutorial:
+    - TUTORIAL: 
         - Using Adhoc: Tutorial/Adhoc.md
-        - Environments: Tutorial/Environments.md
         - From Sandbox to Production: Tutorial/FromSandbox2Production.md
-    - Plan & Pricing: 'Plan&Pricing/Plan&Pricing.md'
-    - FAQ: 'FAQ/faq.md' 
+    - PLAN & PRICING: 
+        - Plan & Pricing: Plan&Pricing/Plan&Pricing.md
+    - APIS: 
+        - About APIs: APIs/APIs.md
+    - HOWTO: 
+        - From Sandbox to Production: Howto/FromSandbox_Production.md
+    - FAQ:
+        - ถาม-ตอบ: FAQ/faq.md
 theme: readthedocs
-
