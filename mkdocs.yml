@@ -20,6 +20,5 @@ nav:
     - FAQ:
         - ถาม-ตอบ: FAQ/faq.md
 theme: readthedocs
-# extra_css: 'css/extra.css'
 extra_css:
     - css/extra.css
