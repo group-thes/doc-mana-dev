@@ -12,8 +12,7 @@ nav:
         - Using Adhoc: Tutorial/Adhoc.md
         - Environments: Tutorial/Environments.md
         - From Sandbox to Production: Tutorial/FromSandbox2Production.md
-    - Plan & Pricing
-        -Plan & Pricing : 'Plan&Pricing/Plan&Pricing.md'
+    - Plan & Pricing: 'Plan&Pricing/Plan&Pricing.md'
     - FAQ: 'FAQ/faq.md' 
 theme: readthedocs
 
