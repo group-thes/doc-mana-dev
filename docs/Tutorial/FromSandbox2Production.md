@@ -13,11 +13,11 @@
 
 ![a](../img/tireChange/payment.png)
 
-4.Login เข้าสู่ API-Management โดยใช้ Production-Key ที่ได้มา เพื่อจะสามารถเข้าถึง APIs ต่างๆได้หลากหลายขึ้นรวมถึงการ Publish API  
+4.Login เข้าสู่ DevPortal โดยใช้ Production-Key ที่ได้มา เพื่อจะสามารถเข้าถึง APIs ต่างๆได้หลากหลายขึ้นรวมถึงการ Publish API  
 
 ![a](../img/tireChange/payment.png)
 
 
 ### การตั้งค่าเพื่อใช้งานกับ Mana Production
-เมื่อนักพัฒนาต้องการจะแก้ไขหรือเปลี่ยนแปลง Application, Server หรือ Configuration ของฝั่งนักพัฒนาเอง ให้สามารถใช้งานกับ Mana production ต้องนำ Production-Key ที่ได้มาจาก API-Management ไปแก้ไขในระบบของนักพัฒนา ซึ่งรวมถึงการเปลี่ยน ฺBaseURL  จาก Sandbox เป็น Production 
+เมื่อนักพัฒนาต้องการจะแก้ไขหรือเปลี่ยนแปลง Application, Server หรือ Configuration ของฝั่งนักพัฒนาเอง ให้สามารถใช้งานกับ Mana production ต้องนำ Production-Key ที่ได้มาจาก DevPortal ไปแก้ไขในระบบของนักพัฒนา ซึ่งรวมถึงการเปลี่ยน ฺBaseURL  จาก Sandbox เป็น Production 
 

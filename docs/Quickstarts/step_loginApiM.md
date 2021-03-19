@@ -1,4 +1,4 @@
-## การ Login เพื่อเข้าใช้งาน API-Management
+## การ Login เพื่อเข้าใช้งาน DevPortal
 
 1.[เปิดหน้า web Api management](https://mana-apim-sandbox-test.developer.azure-api.net/) เพื่อทำการ sign in
 
@@ -8,7 +8,7 @@
 
 ![a](../img/Quickstarts/slm2.PNG)
 
-3.เมื่อ[สมัครเป็นนักพัฒนา](GettingStarted.md) แล้วสแกนเพื่อ Login เข้าใช้งาน API-Management ทาง mana ก็จะส่ง consent มาถามว่าต้องการที่จะยอมรับที่จะเข้า Api management 
+3.เมื่อ[สมัครเป็นนักพัฒนา](GettingStarted.md) แล้วสแกนเพื่อ Login เข้าใช้งาน DevPortal ทาง mana ก็จะส่ง consent มาถามว่าต้องการที่จะยอมรับที่จะเข้า Api management 
 
 
 ![a](../img/Quickstarts/slm3.PNG)
