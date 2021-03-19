@@ -5,20 +5,22 @@ nav:
         - Development Cycle: 'Introduction/DevelopmentCycle.md'
         - Environments: Introduction/Environments.md
     - QUICKSTARTS: 
-        - GettingStarted: 
-            - ขั้นตอนการสมัครร่วมงานกับมานะ: 'Quickstarts/GettingStarted.md'
-            - การเข้าใช้งาน API-Management: 'Quickstarts/step_loginApiM.md'
+        - GettingStarted: Quickstarts/GettingStarted.md
+            # - ขั้นตอนการสมัครร่วมงานกับมานะ: 'Quickstarts/GettingStarted.md'
+            # - การเข้าใช้งาน DevPortal: 'Quickstarts/step_loginApiM.md'
     - TUTORIAL: 
         - Using Adhoc: Tutorial/Adhoc.md
         - From Sandbox to Production: Tutorial/FromSandbox2Production.md
-    - PLAN & PRICING: 
-        - Plan & Pricing: Plan&Pricing/Plan&Pricing.md
-    - APIS: 
+    - APIs: 
         - About APIs: APIs/APIs.md
     - HOWTO: 
         - From Sandbox to Production: Howto/FromSandbox_Production.md
+    - PLAN & PRICING: 
+        - Plan & Pricing: Plan&Pricing/Plan&Pricing.md
     - FAQ:
         - ถาม-ตอบ: FAQ/faq.md
-theme: readthedocs
 extra_css:
     - css/extra.css
+theme:
+    name: readthedocs
+    favicon: 'img/favicon.ico'
