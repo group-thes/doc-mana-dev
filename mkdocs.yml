@@ -6,8 +6,8 @@ nav:
         - Environments: Introduction/Environments.md
     - QUICKSTARTS: 
         - GettingStarted: Quickstarts/GettingStarted.md
-            # - ขั้นตอนการสมัครร่วมงานกับมานะ: 'Quickstarts/GettingStarted.md'
-            # - การเข้าใช้งาน DevPortal: 'Quickstarts/step_loginApiM.md'
+        - ขั้นตอนการอัพเกรด tier: 'Quickstarts/stepUpgrade_tier.md'
+        - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
     - TUTORIAL: 
         - Using Adhoc: Tutorial/Adhoc.md
         - From Sandbox to Production: Tutorial/FromSandbox2Production.md
