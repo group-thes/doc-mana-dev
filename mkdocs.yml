@@ -20,8 +20,7 @@ nav:
     - FAQ:
         - ถาม-ตอบ: FAQ/faq.md
 extra_css:
-    - custom_theme/css/extra.css
+    - css/extra.css
 theme:
     name: readthedocs
     favicon: 'img/favicon.ico'
-    custom_dir: custom_theme/
