@@ -9,4 +9,4 @@
 ![a](../img/Introduction/devportalplant.PNG)
 
 
-และเมื่อ
+และเมื่อทีมนักพัฒนาทำการทดสอบ Environments Sandbox จนพอใจแล้ว ก็จะทำการ Publish ขึ้นไปยัง Production เพื่อให้ User ได้ใช้งานจริง
