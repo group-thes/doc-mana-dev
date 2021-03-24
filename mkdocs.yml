@@ -24,4 +24,4 @@ extra_css:
 theme:
     name: readthedocs
     favicon: 'img/favicon.ico'
-    lang: ['en','th']
+    language: ['en','th']
