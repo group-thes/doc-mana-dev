@@ -10,7 +10,7 @@ nav:
         - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
     - TUTORIAL: 
         - Using Adhoc: Tutorial/Adhoc.md
-        - From Sandbox to Production: Tutorial/FromSandbox2Production.md
+        # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
     - APIs: 
         - About APIs: APIs/APIs.md
     - HOWTO: 
