@@ -1,0 +1,2 @@
+### การตั้งค่าเพื่อใช้งานกับ Mana Production
+เมื่อนักพัฒนาต้องการจะแก้ไขหรือเปลี่ยนแปลง Application, Server หรือ Configuration ของฝั่งนักพัฒนาเอง ให้สามารถใช้งานกับ Mana production ต้องนำ Production-Key ที่ได้มาจาก DevPortal ไปแก้ไขในระบบของนักพัฒนา ซึ่งรวมถึงการเปลี่ยน ฺBaseURL  จาก Sandbox เป็น Production 
