@@ -2,7 +2,7 @@ site_name: Mana
 nav:
     - INTRODUCTION: 
         - Overview: 'Introduction/Overview.md'
-        - Development Cycle: 'Introduction/DevelopmentCycle.md'
+        - Development life cycle: 'Introduction/DevelopmentCycle.md'
         - Environments: Introduction/Environments.md
     - QUICKSTARTS: 
         - GettingStarted: Quickstarts/GettingStarted.md
