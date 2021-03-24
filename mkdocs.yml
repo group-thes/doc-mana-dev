@@ -8,6 +8,7 @@ nav:
         - GettingStarted: Quickstarts/GettingStarted.md
         - ขั้นตอนการอัพเกรด tier: 'Quickstarts/stepUpgrade_tier.md'
         - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
+        - การตั้งค่าการใช้งาน (sandbox + production): 'Quickstarts/setting.md'
     - TUTORIAL: 
         - Using Adhoc: Tutorial/Adhoc.md
         # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
@@ -24,4 +25,4 @@ extra_css:
 theme:
     name: readthedocs
     favicon: 'img/favicon.ico'
-    custom_dir: css/
+    # custom_dir: css/
