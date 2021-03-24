@@ -1,6 +1,7 @@
 ## การ Register สำหรับนักพัฒนา 
 จะสามารถทำได้ก็ต่อเมื่อมีการเปิดใช้งาน Mana User เพื่อยืนยันตัวตนเป็นอันดับแรก และเมื่อทำกระบวนการการยืนยันตัวตนเรียบร้อยแล้วจึงจะสามารถ Register Fuction สำหรับนักพัฒนา ตามรูปแบบด้านล่าง ดังนี้
 
+![a](../img/Quickstarts/GettingStarted/gs0.PNG)
 ### การเปิดใช้งาน Mana User
 
  1.ผู้ใช้ทำการโหลด Mana Application จาก Store (AppStore, PlayStore)
