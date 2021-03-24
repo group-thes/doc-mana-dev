@@ -24,3 +24,4 @@ extra_css:
 theme:
     name: readthedocs
     favicon: 'img/favicon.ico'
+    custom_dir: css/
