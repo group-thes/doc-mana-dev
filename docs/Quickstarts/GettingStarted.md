@@ -97,8 +97,8 @@
 3.เมื่อ[สมัครเป็นนักพัฒนา](GettingStarted.md) แล้วสแกนเพื่อ Login เข้าใช้งาน DevPortal ทาง mana ก็จะส่ง consent มาถามว่าต้องการที่จะยอมรับที่จะเข้า Api management 
 
 
-![a](../img/Quickstarts/GettingStarted/slm3.PNG)
+![a](../img/Quickstarts/GettingStarted/slm3.jpg)
 
-4.ถ้าเลือกอนุญาต แล้วยืนยันก็ทำการ Login เข้า Api management 
+4.ถ้าเลือกอนุญาต แล้วยืนยันก็ทำการ Login เข้า Devportal 
 
 ![a](../img/Quickstarts/GettingStarted/slm4.PNG)

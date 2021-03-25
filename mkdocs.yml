@@ -2,24 +2,25 @@ site_name: Mana
 nav:
     - INTRODUCTION: 
         - Overview: 'Introduction/Overview.md'
-        - Development life cycle: 'Introduction/DevelopmentCycle.md'
         - Environments: Introduction/Environments.md
+        - Development life cycle: 'Introduction/DevelopmentCycle.md'
     - QUICKSTARTS: 
         - GettingStarted: Quickstarts/GettingStarted.md
         - ขั้นตอนการอัพเกรด tier: 'Quickstarts/stepUpgrade_tier.md'
         - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
-        - Setting Key : 'Quickstarts/setting.md'
+        # - Setting Key : 'Quickstarts/setting.md'
     - TUTORIAL: 
         - Using Adhoc: Tutorial/Adhoc.md
+        - From Sandbox to Production: Tutorial/FromSandbox_Production.md
         # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
     - APIs: 
         - About APIs: APIs/APIs.md
     - HOWTO: 
-        - From Sandbox to Production: Howto/FromSandbox_Production.md
+        - From Sandbox to Production: Howto/setting.md
     - PLAN & PRICING: 
         - Plan & Pricing: Plan&Pricing/Plan&Pricing.md
     - FAQ:
-        - ถาม-ตอบ: FAQ/faq.md
+        - FAQ: FAQ/faq.md
         
 # plugins:
 #   - i18n:
