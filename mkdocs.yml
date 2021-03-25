@@ -21,12 +21,12 @@ nav:
     - FAQ:
         - ถาม-ตอบ: FAQ/faq.md
         
-plugins:
-  - i18n:
-      default_language: en
-      languages:
-        en: english
-        th: thai
+# plugins:
+#   - i18n:
+#       default_language: en
+#       languages:
+#         en: english
+#         th: thai
 
 extra_css:
     - css/extra.css
