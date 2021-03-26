@@ -10,7 +10,7 @@
 
 ![a](../img/Tutorial/sand2prod/getkey2.png)
 
-ซึ่งหากนักพัฒนามี[การสมัครหรือเปลี่ยนแปลงเป็น Tier ที่สูงขึ้น](../Quickstarts/stepUpgrade_tier.md) จะได้รับ Production Key เพิ่มขึ้นเพื่อสามารถเข้าใช้งาน API ที่หลากหลายซึ่งรวมถึงการ Publish service 
+ซึ่งหากนักพัฒนามี[การสมัครหรือเปลี่ยนแปลงเป็น Tier ที่สูงขึ้น](../Quickstarts/stepUpgrade_tier.md) เพื่อร้องขอสิทธิเพิ่มเติมในการเข้าถึงข้อมูลซึ่งจะได้รับ Production Key เพื่อให้สามารถเข้าใช้งาน API ที่หลากหลายซึ่งรวมถึงการ Publish service 
 
 การ Publish service นั้นเป็นการเปลี่ยนจากช่วงระยะพัฒนา (Development) ไปยังระยะเตรียมปล่อยระบบออกสู่สาธารณะ (Pre-release) ตาม[วงจรการพัฒนาระบบ](../Introduction/DevelopmentCycle.md) ซึ่งรวมถึงการเปลี่ยนจาก Sandbox มาใช้ Production environment ดังนั้นจึงต้องใช้ Production Key ในการทำงาน 
 

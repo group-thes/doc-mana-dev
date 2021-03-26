@@ -2,7 +2,7 @@
 
 ## [Service Management](https://mana-sand-portal.developer.azure-api.net/api-details#api=dev-master-service-management "Link To sandbox")
 
-การจัดการบริการด้านการรับส่งข้อมูล ทาง mana เปิด api ไว้ให้ 3rd เพื่อใช้ในทดสอบ เช่น การ hook เพื่อรับส่งข้อมูล, การทดสอบการเปิดหน้า Mcontent เป็นต้น api ในหมวด Service Management ที่ทาง mana จัดเต็มไว้ให้ มีดังนี้
+การจัดการบริการด้านการรับส่งข้อมูล ทาง mana เปิด api ไว้ให้ 3rd เพื่อใช้ในทดสอบ เช่น การ hook เพื่อรับส่งข้อมูล, การทดสอบการเปิดหน้า Mcontent เป็นต้น api ในหมวด Service Management ที่ทาง mana จัดเตรียมไว้ให้ มีดังนี้
 ```
 * Services
 * Hook
@@ -11,7 +11,7 @@
 
 ## [Business Management](https://mana-sand-portal.developer.azure-api.net/apis "Link To sandbox")
 
-การจัดการบริการด้านธุรกิจของคุณ ทั้งการควบคุมธุรกิจ จัดการพนักงาน หรือการเงินภายในธุรกิจ ทาง mana เปิด api ไว้ให้ 3rd เพื่อใช้ในทดสอบ เช่น การสร้างร้านค้า, การสมัครเป็นพนักงาน Rider เป็นต้น api ในหมวด Business Management ที่ทาง mana จัดเต็มไว้ให้ มีดังนี้
+การจัดการบริการด้านธุรกิจของคุณ ทั้งการควบคุมธุรกิจ จัดการพนักงาน หรือการเงินภายในธุรกิจ ทาง mana เปิด api ไว้ให้ 3rd เพื่อใช้ในทดสอบ เช่น การสร้างร้านค้า, การสมัครเป็นพนักงาน Rider เป็นต้น api ในหมวด Business Management ที่ทาง mana จัดเตรียมไว้ให้ มีดังนี้
 ```
 * BA
 * Employee

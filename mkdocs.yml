@@ -6,7 +6,7 @@ nav:
         - Development life cycle: 'Introduction/DevelopmentCycle.md'
     - QUICKSTARTS: 
         - GettingStarted: Quickstarts/GettingStarted.md
-        - ขั้นตอนการอัพเกรด tier: 'Quickstarts/stepUpgrade_tier.md'
+        - ขั้นตอนการอัพเกรด Tier: 'Quickstarts/stepUpgrade_tier.md'
         - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
         # - Setting Key : 'Quickstarts/setting.md'
     - TUTORIAL: 
