@@ -1,4 +1,37 @@
 site_name: Mana
 nav:
-    - Home: index.md
-theme: readthedocs
+    - INTRODUCTION: 
+        - Overview: 'Introduction/Overview.md'
+        - Environments: Introduction/Environments.md
+        - Development life cycle: 'Introduction/DevelopmentCycle.md'
+    - QUICKSTARTS: 
+        - GettingStarted: Quickstarts/GettingStarted.md
+        - ขั้นตอนการอัพเกรด Tier: 'Quickstarts/stepUpgrade_tier.md'
+        - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
+        # - Setting Key : 'Quickstarts/setting.md'
+    - TUTORIAL: 
+        - Using Adhoc: Tutorial/Adhoc.md
+        - From Sandbox to Production: Tutorial/FromSandbox_Production.md
+        # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
+    - APIs: 
+        - About APIs: APIs/APIs.md
+    - HOWTO: 
+        - From Sandbox to Production: Howto/setting.md
+    - PLAN & PRICING: 
+        - Plan & Pricing: Plan&Pricing/Plan&Pricing.md
+    - FAQ:
+        - FAQ: FAQ/faq.md
+        
+# plugins:
+#   - i18n:
+#       default_language: en
+#       languages:
+#         en: english
+#         th: thai
+
+extra_css:
+    - css/extra.css
+theme:
+    name: readthedocs
+    favicon: 'img/favicon.ico'
+    custom_dir: theme_overrides
