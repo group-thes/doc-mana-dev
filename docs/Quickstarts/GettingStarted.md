@@ -1,5 +1,5 @@
 ## การ Register สำหรับนักพัฒนา 
-จะสามารถทำได้ก็ต่อเมื่อมีการเปิดใช้งาน Mana User เพื่อยืนยันตัวตนเป็นอันดับแรก และเมื่อทำกระบวนการการยืนยันตัวตนเรียบร้อยแล้วจึงจะสามารถ Register Fuction สำหรับนักพัฒนา ตามรูปแบบด้านล่าง ดังนี้
+จะสามารถทำได้ก็ต่อเมื่อมีการเปิดใช้งาน Mana User เพื่อยืนยันตัวตนเป็นอันดับแรก และเมื่อทำกระบวนการการยืนยันตัวตนเรียบร้อยแล้วจึงจะสามารถ Register Fuction สำหรับนักพัฒนา ตามรูปแบบด้านล่างดังนี้
 
 ![a](../img/Quickstarts/GettingStarted/gs0.PNG)
 ### การเปิดใช้งาน Mana User
@@ -11,7 +11,7 @@
  ภาพที่1 (ซ้าย) Mana Application บน Store ของ Android  ,
 (ขวา) Mana Application บน Store ของ IOS   
 
- 2.ทำการ LogIn เพื่อใช้งานโดยมีวิธีการดังนี้
+ 2.ทำการ Log in เพื่อใช้งานโดยมีวิธีการดังนี้
  
 2.1 ระบุหมายเลขโทรศัพท์เพื่อรับรหัส OTP
 
@@ -48,7 +48,7 @@
 (ขวา) การกรอก PIN ที่เคย Setup ไว้ 
 
 ### การสมัครเพื่อเป็นนักพัฒนา
- 1.กด side menu แล้วเลือกเมนู 'สำหรับนักพัฒนา'
+ 1.กด Side menu แล้วเลือกเมนู 'สำหรับนักพัฒนา'
 
 ![a](../img/Quickstarts/GettingStarted/gs7.PNG)
 
@@ -84,21 +84,21 @@
 
 ภาพที่12 หน้าเลือกบัญชีสำหรับนักพัฒนา
 
-### การ Login เพื่อเข้าใช้งาน DevPortal
+### การ Log in เพื่อเข้าใช้งาน DevPortal
 
-1.[เปิดหน้า web Api management](https://mana-apim-sandbox-test.developer.azure-api.net/) เพื่อทำการ sign in
+1.เปิดหน้า [DevPortal](https://mana-apim-sandbox-test.developer.azure-api.net/) เพื่อทำการ Sign in
 
 ![a](../img/Quickstarts/GettingStarted/slm1.PNG)
 
-2.ใช้ Mana app สแกนเพื่อเข้าใช้งาน [เปิดใช้งาน mana User](GettingStarted.md)
+2.ใช้ Mana application สแกนเพื่อเข้าใช้งาน [ดูวิธีเปิดใช้งาน Mana User](GettingStarted.md)
 
 ![a](../img/Quickstarts/GettingStarted/slm2.PNG)
 
-3.เมื่อ[สมัครเป็นนักพัฒนา](GettingStarted.md) แล้วสแกนเพื่อ Login เข้าใช้งาน DevPortal ทาง mana ก็จะส่ง consent มาถามว่าต้องการที่จะยอมรับที่จะเข้า Api management 
-
+<!-- 3.เมื่อ[สมัครเป็นนักพัฒนา](GettingStarted.md) เรียบร้อยแล้ว ต้องทำการสแกนเพื่อ Log in เข้าใช้งาน DevPortal ทาง mana จะมีการส่งคำขออนุญาตเพื่อใช้งาน DevPortal -->
+3.จะมีการส่งคำขออนุญาตเพื่อยืนยันการใช้งาน DevPortal ใน Mana application 
 
 ![a](../img/Quickstarts/GettingStarted/slm3.jpg)
 
-4.ถ้าเลือกอนุญาต แล้วยืนยันก็ทำการ Login เข้า Devportal 
+4.เลือกอนุญาตและยืนยันเพื่อ Login เข้าสู่ Devportal 
 
 ![a](../img/Quickstarts/GettingStarted/slm4.PNG)

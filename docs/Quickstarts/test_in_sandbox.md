@@ -1,12 +1,12 @@
 # การทดสอบการทำงานใน Sandbox environment
 
-หากเมื่อใดก็ตามที่นักพัฒนาต้องการทำการทดสอบ Application ที่ถูกสร้างขึ้นใน Sandbox environment นักพัฒนาจะต้องใช้ Mana sandbox application ควบคู่ไปกับการทดสอบ
+หากเมื่อใดก็ตามที่นักพัฒนาต้องการทำการทดสอบ Application ที่ถูกสร้างขึ้นใน Sandbox environment นักพัฒนาจำเป็นต้องใช้ Mana sandbox application ควบคู่ไปกับการทดสอบ
 
 ### การเปิดใช้งาน Mana sandbox application
 
 1.ผู้ใช้ทำการโหลด Mana sandbox application จาก Store (AppStore, PlayStore)
 
-2.ทำการ LogIn เพื่อใช้งานโดยมีวิธีการดังนี้
+2.ทำการ Log in เพื่อใช้งานโดยมีวิธีการดังนี้
 
 * 2.1 ระบุหมายเลขโทรศัพท์เพื่อรับรหัส OTP
 

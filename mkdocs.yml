@@ -14,7 +14,7 @@ nav:
         - From Sandbox to Production: Tutorial/FromSandbox_Production.md
         # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
     - APIs: 
-        - About APIs: APIs/APIs.md
+        - API Products: APIs/APIs.md
     - HOWTO: 
         - From Sandbox to Production: Howto/setting.md
     - PLAN & PRICING: 
