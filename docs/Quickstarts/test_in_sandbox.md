@@ -2,7 +2,7 @@
 
 หากเมื่อใดก็ตามที่นักพัฒนาต้องการทำการทดสอบ Application ที่ถูกสร้างขึ้นใน Sandbox environment นักพัฒนาจำเป็นต้องใช้ Mana sandbox application ควบคู่ไปกับการทดสอบ
 
-### การเปิดใช้งาน Mana sandbox application
+## การเปิดใช้งาน Mana sandbox application
 
 1.ผู้ใช้ทำการโหลด Mana sandbox application จาก Store (AppStore, PlayStore)
 

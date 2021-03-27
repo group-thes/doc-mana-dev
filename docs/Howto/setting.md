@@ -1,6 +1,4 @@
-
-## FromSandbox to Production
-
+# FromSandbox to Production
 ในระหว่างการพัฒนาระบบทีมนักพัฒนาสามารถทำการเชื่อม API กับทาง mana ได้โดยการนำ Sandbox key มาใช้งาน ซึ่งหากนักพัฒนาได้ทำการทดสอบเป็นที่เรียบร้อยแล้วและต้องการจะนำระบบออกสู่สาธารณะจะต้องทำการ Publicsh service ซึ่งต้องใช้ Production key ที่ได้มาจาก Devportal พร้อมทั้งทำการเปลี่ยน ฺBaseURL หรือทำ Configuration ให้พร้อมกับการทำงานบน Environment นั้นๆ ซึ่งจากที่กล่าวมาสามารถอธิบายได้ดังรูปด้านล่าง
 
 ![a](../img/Quickstarts/settingKey/settingKey.PNG)
