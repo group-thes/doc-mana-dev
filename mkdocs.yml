@@ -8,7 +8,6 @@ nav:
         - GettingStarted: Quickstarts/GettingStarted.md
         - ขั้นตอนการอัพเกรด Tier: 'Quickstarts/stepUpgrade_tier.md'
         - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
-        # - Setting Key : 'Quickstarts/setting.md'
     - TUTORIAL: 
         - Using Adhoc: Tutorial/Adhoc.md
         - From Sandbox to Production: Tutorial/FromSandbox_Production.md
@@ -19,8 +18,8 @@ nav:
         - From Sandbox to Production: Howto/setting.md
     - PLAN & PRICING: 
         - Plan & Pricing: Plan&Pricing/Plan&Pricing.md
-    - FAQ:
-        - FAQ: FAQ/faq.md
+    - FAQs:
+        - FAQs: FAQ/faq.md
         
 # plugins:
 #   - i18n:
@@ -35,3 +34,4 @@ theme:
     name: readthedocs
     favicon: 'img/favicon.ico'
     custom_dir: theme_overrides
+    logo: img/Logo.png
