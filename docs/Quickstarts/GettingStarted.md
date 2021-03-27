@@ -1,8 +1,8 @@
-## การ Register สำหรับนักพัฒนา 
+# การ Register สำหรับนักพัฒนา 
 จะสามารถทำได้ก็ต่อเมื่อมีการเปิดใช้งาน Mana User เพื่อยืนยันตัวตนเป็นอันดับแรก และเมื่อทำกระบวนการการยืนยันตัวตนเรียบร้อยแล้วจึงจะสามารถ Register Fuction สำหรับนักพัฒนา ตามรูปแบบด้านล่างดังนี้
 
 ![a](../img/Quickstarts/GettingStarted/gs0.PNG)
-### การเปิดใช้งาน Mana User
+## การเปิดใช้งาน Mana User
 
  1.ผู้ใช้ทำการโหลด Mana Application จาก Store (AppStore, PlayStore)
 
@@ -47,7 +47,7 @@
 ภาพที่6 (ซ้าย) การแสดงผลของผู้ใช้ที่เคยลงทะเบียนแล้ว,
 (ขวา) การกรอก PIN ที่เคย Setup ไว้ 
 
-### การสมัครเพื่อเป็นนักพัฒนา
+## การสมัครเพื่อเป็นนักพัฒนา
  1.กด Side menu แล้วเลือกเมนู 'สำหรับนักพัฒนา'
 
 ![a](../img/Quickstarts/GettingStarted/gs7.PNG)
@@ -84,7 +84,7 @@
 
 ภาพที่12 หน้าเลือกบัญชีสำหรับนักพัฒนา
 
-### การ Log in เพื่อเข้าใช้งาน DevPortal
+## การ Log in เพื่อเข้าใช้งาน DevPortal
 
 1.เปิดหน้า [DevPortal](https://mana-apim-sandbox-test.developer.azure-api.net/) เพื่อทำการ Sign in
 
