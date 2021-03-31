@@ -13,7 +13,7 @@ nav:
         - Using Adhoc: Tutorial/Adhoc.md
         - From Sandbox to Production: Tutorial/FromSandbox_Production.md
         - RegisterLoginFlow: 'Tutorial/RegisterLoginFlow.md'
-        - CreateServices: 'Tutorial/CreateServices.md'
+        - Create Services: 'Tutorial/CreateServices.md'
         # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
     - APIs: 
         - API Products: APIs/APIs.md
