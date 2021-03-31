@@ -1,5 +1,7 @@
 site_name: Mana
+
 nav:
+    - Home : 'index.md'
     - INTRODUCTION: 
         - Overview: 'Introduction/Overview.md'
         - Environments: Introduction/Environments.md
@@ -8,12 +10,9 @@ nav:
         - GettingStarted: Quickstarts/GettingStarted.md
         - ขั้นตอนการอัพเกรด Tier: 'Quickstarts/stepUpgrade_tier.md'
         - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
-
     - TUTORIAL: 
         - Using Adhoc: Tutorial/Adhoc.md
         - From Sandbox to Production: Tutorial/FromSandbox_Production.md
-        - RegisterLoginFlow: 'Tutorial/RegisterLoginFlow.md'
-        - CreateServices: 'Tutorial/CreateServices.md'
         # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
     - APIs: 
         - API Products: APIs/APIs.md
@@ -23,18 +22,68 @@ nav:
         - Plan & Pricing: Plan&Pricing/Plan&Pricing.md
     - FAQs:
         - FAQs: FAQ/faq.md
-        
-# plugins:
-#   - i18n:
-#       default_language: en
-#       languages:
-#         en: english
-#         th: thai
+
+plugins:
+  - search:
+      lang:
+        - en
+        - th
+
+markdown_extensions:
+  - toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      toc_depth: 3
+
+theme:
+  name: material
+  custom_dir: material
+  logo: assets/Logom_manaWhite.png
+  favicon: assets/favicon.ico
+  font:
+    text: Kanit
+    code: Roboto Mono
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - toc.integrate
+    
+  palette:
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      # primary: black
+      # accent: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      # primary: grey
+      # accent: grey
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode.
+
+extra:
+  alternate:
+
+    # Switch to English
+    - name: English
+      link: /
+      lang: en
+
+    # Switch to Thai
+    - name: Thai
+      link: /th/
+      lang: th
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
 
 extra_css:
-    - css/extra.css
-theme:
-    name: readthedocs
-    favicon: 'img/favicon.ico'
-    custom_dir: theme_overrides
-    logo: img/Logo.png
+  - stylesheets/extra.css
