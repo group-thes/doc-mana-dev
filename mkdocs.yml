@@ -31,7 +31,6 @@ plugins:
 
 markdown_extensions:
   - toc:
-      slugify: !!python/name:pymdownx.slugs.uslugify
       toc_depth: 3
 
 theme:
