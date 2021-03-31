@@ -8,9 +8,12 @@ nav:
         - GettingStarted: Quickstarts/GettingStarted.md
         - ขั้นตอนการอัพเกรด Tier: 'Quickstarts/stepUpgrade_tier.md'
         - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
+
     - TUTORIAL: 
         - Using Adhoc: Tutorial/Adhoc.md
         - From Sandbox to Production: Tutorial/FromSandbox_Production.md
+        - RegisterLoginFlow: 'Tutorial/RegisterLoginFlow.md'
+        - CreateServices: 'Tutorial/CreateServices.md'
         # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
     - APIs: 
         - API Products: APIs/APIs.md
