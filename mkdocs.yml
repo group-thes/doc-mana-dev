@@ -14,9 +14,10 @@ nav:
         - From Sandbox to Production: Tutorial/FromSandbox_Production.md
         - RegisterLoginFlow: 'Tutorial/RegisterLoginFlow.md'
         - Create Services: 'Tutorial/CreateServices.md'
-        # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
+        - Using Mana Library: Tutorial/Using_manalib.md
     - APIs: 
         - API Products: APIs/APIs.md
+        - Mana library: APIs/Manalib.md
     - HOWTO: 
         - From Sandbox to Production: Howto/setting.md
     - PLAN & PRICING: 
