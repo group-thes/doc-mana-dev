@@ -29,16 +29,17 @@
 กรอกข้อมูลครบแล้วกด Send เพื่อเอาค่า LoginId ได้เลย
 
 
-# การ Login กับระบบ 3rd 
+# ระบบ 3rd Login 
 
-1.ทำการ Login เข้าสู่ระบบของ Web 3rd
+1.สร้างหน้า web เพื่อให้ User Login
 
-2.Web 3rd ส่ง ServiceId และ LoginId ให้ IDP
+2.User กด Login มีการเรียกใช้ API IDP(เปลี่ยนชื่อ API) โดยการส่งค่า ServiceId และ LoginId
 
-3.IDP ส่งเปิด QR Login with mana
+3.API IDP(เปลี่ยนชื่อ API) ตอบ URL กลับมาแล้วสร้างเป็น QR หรือ AppLink
 
-4.ใช้ App mana scan QR 
+4.ใช้ App mana scan QR
 
-5.ทำการอนุญาตการ consent
 
-6.Web 3rd ทำการ Login สำเร็จ
+
+
+
