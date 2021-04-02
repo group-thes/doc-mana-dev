@@ -10,11 +10,11 @@
 
 ![a](../img/Tutorial/sand2prod/getkey2.png)
 
-ซึ่งหากนักพัฒนาต้องการที่จะ[อัพเกรด Tier เป็นระดับ Standard หรือสูงขึ้น](../Quickstarts/stepUpgrade_tier.md)เพื่อร้องขอสิทธิเพิ่มเติมในการเข้าถึงข้อมูล เมื่อทำการอัพเกรด Tier เรียบร้อยแล้วจะสามารถเรียกใช้ APIs ของระดับ Standard tier ซึ่งรวมถึงการ Publish service
+หากนักพัฒนาต้องการที่จะ[อัพเกรด Tier เป็นระดับ Standard หรือสูงขึ้น](../Quickstarts/stepUpgrade_tier.md)เพื่อขอสิทธิ์เข้าถึงข้อมูลที่มากขึ้น เมื่อทำการอัพเกรด Tier แล้วจะสามารถเรียกใช้ APIs ได้มากขึ้นตามระดับ Tier ที่ได้อัพเกรดไว้ ซึ่งรวมถึงการ Publish service
 
-ฉะนั้นการ Publish service จึงเป็นการเปลี่ยนจากช่วงระยะพัฒนา (Development) ไปยังระยะเตรียมปล่อยระบบออกสู่สาธารณะ (Pre-release) ตาม[วงจรการพัฒนาระบบ](../Introduction/DevelopmentCycle.md) ซึ่งรวมถึงการเปลี่ยนจาก Sandbox มาใช้ Production environment 
+ฉะนั้นการ Publish service จึงเป็นการเตรียมการเปลี่ยนจากช่วงระยะพัฒนา (Development) ไปยังระยะเตรียมปล่อยระบบออกสู่สาธารณะ (Pre-release) ตาม[วงจรการพัฒนาระบบ](../Introduction/DevelopmentCycle.md) และรวมถึงการเตรียมการเปลี่ยนจาก Sandbox มาใช้ Production environment 
 
-ดังนั้นจึงต้องใช้ Production Key ในการทำงานซึ่งการจะนำ Production Key มาใช้งานนั้นต้องทำการเรียกผ่าน API (production subscriptions) ใน DevPortal และทำการ Configure หรือตั้งค่า ฺBaseURL เพื่อทำการเชื่อมต่อกับ APIs ของ Production environment 
+ดังนั้นหากต้องการเชื่อมต่อกับ APIs ของ Production environment จำเป็นต้องใช้ Production Key ในการทำงานซึ่งการจะนำ Production Key มาใช้งานนั้นต้องทำการเรียกผ่าน API (production subscriptions) ใน DevPortal และทำการ Configure หรือตั้งค่า ฺBaseURL เพื่อทำการเชื่อมต่อกับ APIs ของ Production environment 
 
 รูปตัวอย่าง call api
 
