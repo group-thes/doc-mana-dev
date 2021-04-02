@@ -34,9 +34,7 @@ nav:
 
 plugins:
     - search:
-        lang: 
-        - en
-        - th
+        lang: th
 
 extra_css:
     - css/extra.css
