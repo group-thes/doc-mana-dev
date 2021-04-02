@@ -32,6 +32,12 @@ nav:
 #         en: english
 #         th: thai
 
+plugins:
+    - search:
+        lang: 
+        - en
+        - th
+
 extra_css:
     - css/extra.css
 theme:
