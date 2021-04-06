@@ -1,3 +1,4 @@
+# Mana library
 ใน Mana application จะมีฟังก์ชั่นที่อนุญาตให้ 3rd party ทำการ [Register mContent](www.google.com) เพื่อนำหน้าเว็บที่ทาง 3rd party พัฒนามาแสดงใน Mana application ซึ่งหน้าเว็บที่จะนำมาแสดงสามารถเรียกใช้ความสามารถตามที่ **Mana library** เขียนไว้ หากนักพัฒนาต้องการเรียกใช้งานจะมีขั้นตอนดังนี้
 ## การติดตั้ง Mana Library 
 ### ติดตั้งใน Html
@@ -33,7 +34,7 @@ import { IonManaLib } from 'manawallib-ion';
     ],
 })
 ```
-* สำหรับการ run locale test สามารถใส่ .SetConfiguration("svcid","key") หลัง IonManaLibเพื่อเรียกดูหน้า UI  
+* สำหรับการ Run locale test สามารถใส่ .SetConfiguration("svcid","key") หลัง IonManaLib เพื่อแสดงหน้าตา UI  
 ```
 import { IonManaLib } from 'manawallib-ion';
 ...
@@ -45,15 +46,14 @@ import { IonManaLib } from 'manawallib-ion';
     ],
 })
 ```
-
-
-33333333333333333333
+## การเรียกใช้งาน Mana Library
+1.ในการใช้งานลำดับแรกทาง mana แนะนำให้เรียกใช้งาน initPageApi เพื่อเป็นการเตรียมหน้าเพจให้พร้อมใช้งาน
+### การใช้งานใน Html
 ```
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="node_modules/manawallib/dist/bundle.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        ....
     </head>
     <body>
         <script>
@@ -65,14 +65,10 @@ import { IonManaLib } from 'manawallib-ion';
             });
             function Confirm()
             {
-                console.log("xxx");
-                // lib.SubmitFormData("2354512",data);
+                lib.SubmitFormData("2354512",data);
             }
         </script>
     </body>
 </html>
 ```
-
-## ตัวอย่างการเรียกใช้งาน Mana Library
-Basic usage
-
+### การใช้งานใน Ionic (รองรับการใช้การสำหรับ Ionic4)
