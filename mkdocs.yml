@@ -11,7 +11,7 @@ nav:
 
     - TUTORIAL: 
         - Create Services: 'Tutorial/CreateServices.md'
-        - RegisterLoginFlow: 'Tutorial/RegisterLoginFlow.md'
+        - Register Login Flow: 'Tutorial/RegisterLoginFlow.md'
         - Using Mana Library: Tutorial/Using_manalib.md
         - Using Adhoc: Tutorial/Adhoc.md
         - From Sandbox to Production: Tutorial/FromSandbox_Production.md
