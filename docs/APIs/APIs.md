@@ -1,13 +1,19 @@
 # API Products
 Features ต่างๆที่ทาง mana เปิดให้นักพัฒนาสามารถเข้าใช้งานผ่าน API โดยแบ่งแยกออกตามหมวดหมู่ได้ดังนี้
 ## [Service Management](https://mana-sand-portal.developer.azure-api.net/api-details#api=dev-master-service-management "Link To sandbox")
-การบริการว่าด้วยเรื่องของการทำให้มีตัวตนและกำกับดูแลให้ API สามารถเรียกใช้งานได้ เช่นการลงทะเบียนเพื่อเปิดใช้งานระบบ การส่งข้อมูลจากผู้ให้บริการเมื่อเกิดเหตุการณ์บางอย่างในขณะนั้น การแสดงหน้าเว็บของนักพัฒนาบน Mana application เป็นต้น API ในหมวด Service Management ที่ทาง mana จัดเตรียมไว้ให้มีดังนี้
+การบริการว่าด้วยเรื่องของการสร้างตัวตนและกำกับดูแลให้สามารถเรียกใช้งานข้อมูลที่ได้ลงทะเบียนไว้ได้ เช่นการลงทะเบียนเพื่อเปิดใช้งานระบบ การส่งข้อมูลจากผู้ให้บริการเมื่อเกิดเหตุการณ์บางอย่างในขณะนั้น การแสดงหน้าเว็บของนักพัฒนาบน Mana application เป็นต้น API ในหมวด Service Management ที่ทาง mana จัดเตรียมไว้ให้มีดังนี้
 ```
 * Services
 * Hook
 * mContent
 ```
 
+## [Service Publishing](https://mana-sand-portal.developer.azure-api.net/apis "Link To sandbox")
+การจัดการบริการเกี่ยวกับการเตรียมข้อมูลให้พร้อมในการใช้งานสำหรับ Production environment เช่น การนำ Service เผยแพร่สู่ตลาด API ในหมวด Service Publishing ที่ทาง mana จัดเตรียมไว้ให้มีดังนี้
+```
+* Publish services
+```
+ 
 ## [Business Management](https://mana-sand-portal.developer.azure-api.net/apis "Link To sandbox")
 การจัดการบริการด้านธุรกิจ ไม่ว่าจะเป็นเรื่องของควบคุมดูแลธุรกิจต่างๆ ทั้งการจัดการเรื่องการเงินและพนักงาน เช่น การสร้างร้านค้า การสมัครเป็นพนักงานในร้าน เป็นต้น API ในหมวด Business Management ที่ทาง mana จัดเตรียมไว้ให้มีดังนี้
 ```

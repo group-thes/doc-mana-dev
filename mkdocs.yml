@@ -8,12 +8,16 @@ nav:
         - GettingStarted: Quickstarts/GettingStarted.md
         - ขั้นตอนการอัพเกรด Tier: 'Quickstarts/stepUpgrade_tier.md'
         - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
+
     - TUTORIAL: 
+        - Create Services: 'Tutorial/CreateServices.md'
+        - Register Login Flow: 'Tutorial/RegisterLoginFlow.md'
+        - Using Mana Library: Tutorial/Using_manalib.md
         - Using Adhoc: Tutorial/Adhoc.md
         - From Sandbox to Production: Tutorial/FromSandbox_Production.md
-        # - From Sandbox to Production: Tutorial/FromSandbox2Production.md
     - APIs: 
         - API Products: APIs/APIs.md
+        - Mana library: APIs/Manalib.md
     - HOWTO: 
         - From Sandbox to Production: Howto/setting.md
     - PLAN & PRICING: 
@@ -27,6 +31,10 @@ nav:
 #       languages:
 #         en: english
 #         th: thai
+
+plugins:
+    - search:
+        lang: th
 
 extra_css:
     - css/extra.css
