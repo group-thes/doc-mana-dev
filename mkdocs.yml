@@ -1,29 +1,29 @@
 site_name: Mana
-nav:
-    - INTRODUCTION: 
-        - Overview: 'Introduction/Overview.md'
-        - Environments: Introduction/Environments.md
-        - Development life cycle: 'Introduction/DevelopmentCycle.md'
-    - QUICKSTARTS: 
-        - GettingStarted: Quickstarts/GettingStarted.md
-        - ขั้นตอนการอัพเกรด Tier: 'Quickstarts/stepUpgrade_tier.md'
-        - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
+# nav:
+#     - INTRODUCTION: 
+#         - Overview: 'Introduction/Overview.md'
+#         - Environments: Introduction/Environments.md
+#         - Development life cycle: 'Introduction/DevelopmentCycle.md'
+#     - QUICKSTARTS: 
+#         - GettingStarted: Quickstarts/GettingStarted.md
+#         - ขั้นตอนการอัพเกรด Tier: 'Quickstarts/stepUpgrade_tier.md'
+#         - การทดสอบการทำงานใน sandbox: 'Quickstarts/test_in_sandbox.md'
 
-    - TUTORIAL: 
-        - Create Services: 'Tutorial/CreateServices.md'
-        - Register Login Flow: 'Tutorial/RegisterLoginFlow.md'
-        - Using Mana Library: Tutorial/Using_manalib.md
-        - Using Adhoc: Tutorial/Adhoc.md
-        - From Sandbox to Production: Tutorial/FromSandbox_Production.md
-    - APIs: 
-        - API Products: APIs/APIs.md
-        - Mana library: APIs/Manalib.md
-    - HOWTO: 
-        - From Sandbox to Production: Howto/setting.md
-    - PLAN & PRICING: 
-        - Plan & Pricing: Plan&Pricing/Plan&Pricing.md
-    - FAQs:
-        - FAQs: FAQ/faq.md
+#     - TUTORIAL: 
+#         - Create Services: 'Tutorial/CreateServices.md'
+#         - Register Login Flow: 'Tutorial/RegisterLoginFlow.md'
+#         - Using Mana Library: Tutorial/Using_manalib.md
+#         - Using Adhoc: Tutorial/Adhoc.md
+#         - From Sandbox to Production: Tutorial/FromSandbox_Production.md
+#     - APIs: 
+#         - API Products: APIs/APIs.md
+#         - Mana library: APIs/Manalib.md
+#     - HOWTO: 
+#         - From Sandbox to Production: Howto/setting.md
+#     - PLAN & PRICING: 
+#         - Plan & Pricing: Plan&Pricing/Plan&Pricing.md
+#     - FAQs:
+#         - FAQs: FAQ/faq.md
         
 # plugins:
 #   - i18n:
@@ -33,13 +33,18 @@ nav:
 #         th: thai
 
 plugins:
-    - search:
-        lang: th
+  - i18n:
+      default_language: en
+      languages:
+        en: english
+        th: thai
+  - search
+  - localsearch
 
 extra_css:
     - css/extra.css
 theme:
-    name: readthedocs
+    name: material
     favicon: 'img/favicon.ico'
-    custom_dir: theme_overrides
+    custom_dir: theme
     logo: img/Logo.png
