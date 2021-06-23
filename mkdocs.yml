@@ -39,7 +39,6 @@ plugins:
         en: english
         th: thai
   - search
-  - localsearch
 
 extra_css:
     - css/extra.css
