@@ -34,7 +34,7 @@ site_name: Mana
 
 plugins:
   - i18n:
-      default_language: en
+      default_language: th
       languages:
         en: english
         th: thai
