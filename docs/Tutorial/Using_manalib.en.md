@@ -1,0 +1,3 @@
+# Mana library
+
+## Coming soon
