@@ -45,5 +45,4 @@ extra_css:
 theme:
     name: material
     favicon: 'img/favicon.ico'
-    custom_dir: theme
     logo: img/Logo.png
