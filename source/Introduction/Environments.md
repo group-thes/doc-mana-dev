@@ -1,17 +1,17 @@
 # Production and Sandbox Environments
-ทีมนักพัฒนาของ mana ได้มีการออกแบบสร้างสภาวะแวดล้อมที่เหมาะสมกับการพัฒนาระบบของนักพัฒนาภายนอก (3rd party) เพื่อให้สามารถทดลองระบบก่อนนำออกจำหน่ายสู่สาธารณะ โดยแบ่งเป็น 2 Environments ตามหัวข้อด้านล่างนี้ 
+The development team at mana has designed a development environment suitable for third-party developers to allow trials before public release. They are divided into two environments as described below.
 
 ## Sandbox environment
 <!-- รูป เงินปลอมมีการพัฒนาระบบ และแยกขาดกับแอพในตลาด -->
 <!-- โดยบุคคลภายนอกจะไม่สามารถเข้ามายุ่งเกี่ยวได้ -->
 
-เป็นการสร้างสภาวะแวดล้อมจำลองที่ใกล้เคียงกับการทำงานจริง แต่มีการแยกขาดกันอย่างสิ้นเชิงกับระบบที่กำลังทำการเผยแพร่ในตลาด เพื่อให้ทีมนักพัฒนาสามารถทำการทดสอบการทำงานของระบบได้อย่างอิสระโดยไม่มีผลกระทบใดๆกับการใช้งานจริง ซึ่งนั่นหมายถึงเงินที่ใช้ทดสอบในช่วงนี้จะยังไม่ใช่เงินจริงเป็นเงินเสมือนเพื่อใช้ในการทดสอบ และผู้ใช้ภายนอกจะไม่สามารถเข้าใช้งานใดๆในขั้นตอนนี้ได้ นอกเสียจากทีมนักพัฒนาเอง ซึ่งนักพัฒนาที่มีความสนใจในการพัฒนาระบบร่วมกับ mana สามารถทำ[การสมัครเพื่อเป็นนักพัฒนา](../Quickstarts/GettingStarted.md)ได้ตามขั้นตอน 
+This creates a simulated environment that is close to the actual work. But there is a complete separation between the systems being released on the market. So that the development team can test the system independently without any impact on the actual use. This means that the test money during this time is not real money as virtual money to use for testing. And external users will not be able to access anything in this step. except the developer team itself. which developers who are interested in developing the system together with mana can do[Applying to become a developer](../Quickstarts/GettingStarted.md)can follow the steps
 
 ## Production environment
 
 <!-- รูป เงินจริง แอพใช้ตัวเดียวกันกับในตลาด -->
 
-เป็นการทำงานในสภาวะแวดล้อมที่ใช้ข้อมูลจริงทั้งหมด ซึ่งหมายถึงเงินที่ใช้ในช่วงนี้จะเป็นเงินจริงที่ใช้งานกับ Application บน store
-โดยการที่จะนำระบบออกสู่สาธารณะได้นั้นทีมนักพัฒนาต้องมี [Tier ที่เป็นระดับ Standard หรือสูงขึ้นไป](../Quickstarts/stepUpgrade_tier.md) เท่านั้นจึงจะสามารถนำระบบเผยแพร่ออกสู่สาธารณะได้
+It works in an environment that uses all real data. This means that the money spent during this period will be real money used for applications on the store.
+In order to bring the system to the public, the developer team must have [Tier that is Standard or higher](../Quickstarts/stepUpgrade_tier.md) Only then can the system be released to the public.
 
-ดังนั้นจากที่กล่าวมาข้างต้น เมื่อนักพัฒนาทำการสมัครเพื่อเป็นนักพัฒนาเรียบร้อยแล้ว จะสามารถทำการสร้างระบบ ออกแบบ และทดสอบการทำงานภายใต้ Sandbox environment ซึ่งหลังจากที่ทำการทดสอบจนเป็นที่พอใจและต้องการนำระบบเผยแพร่ออกสู่ตลาดจะต้องทำการเปลี่ยน Tier เป็น Standard หรือสูงขึ้นไปเพื่อใช้งาน Production environment
+Therefore, from the aforementioned Once a developer has successfully applied to become a developer. The system can be built, designed and tested in a sandbox environment. After the test is satisfied and want to bring the system to market, the tier must be changed to Standard or higher in order to use the production environment.

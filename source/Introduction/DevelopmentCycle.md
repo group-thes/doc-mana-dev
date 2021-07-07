@@ -1,19 +1,19 @@
 # Development life cycle
-การพัฒนาระบบของ 3rd party ร่วมกับ mana มีขั้นตอนการพัฒนาระบบที่ถูกรวบรวมตามลำดับขั้นตอนของแต่ละช่วงการทำงาน ทั้งนี้เพื่อรองรับกระบวนการทำงานตั้งแต่การเริ่มพัฒนา การเข้าสู่ช่วงทดสอบ ไปจนถึงการเผยแพร่สู่ตลาดเพื่อการใช้งานจริง ซึ่งจากที่กล่าวมาสามารถแบ่งวงจรการทำงานได้เป็นช่วงหลักๆดังนี้
+3rd party system development in conjunction with mana There are system development steps that are compiled in chronological order for each stage. This is to support the work process from the beginning of development. entering the test period to the release to the market for real use From the foregoing, the working cycle can be divided into the following main phases:
 
 ![a](../img/Introduction/life_cycle/lifecycle.PNG)
 
-## ช่วงระยะพัฒนา (Development) 
-เป็นระยะที่เปิดโอกาสให้ทีมนักพัฒนาสามารถเข้ามาทำการพัฒนาระบบของตัวเองเพื่อทำการทดสอบระบบที่เป็นไปได้ในการทำตลาดหรือมีความสอดคล้องกับความต้องการของตลาด โดยการพัฒนาระบบทั้งหมดที่เกิดขึ้นในระยะนี้ผู้ใช้ภายนอกจะไม่สามารถเข้าใช้งานใดๆในขั้นตอนนี้ได้ 
+## Development)
+It is a phase that allows developers to develop their own systems to test the systems that are possible to market or to meet market requirements. With all system developments taking place in this phase, external users will not be able to access any of them at this stage.
 
-การทำงานในระยะนี้เป็นการทำงานภายใต้ Sandbox environment ดังนั้นหากมีการทดสอบระบบใน Application นักพัฒนาจำเป็นต้องใช้ [Mana sandbox application](../Quickstarts/test_in_sandbox.md) ควบคู่ไปกับการทดสอบของฝั่งนักพัฒนา ซึ่งหลังจากที่ได้มีการทดสอบระบบเป็นที่เรียบร้อย หากต้องการเผยแพร่ระบบออกสู่สาธารณะต้องทำการเชื่อมต่อกับ APIs เพื่อเตรียมเผยแพร่สู่ตลาด 
+This phase works in a sandbox environment, so if testing the system in the application the developer needs  [Mana sandbox application](../Quickstarts/test_in_sandbox.md) Along with the developer's testing which after the system has been tested successfully To release the system to the public, it must be connected to the APIs to prepare it for market release.
 <!-- หรือกล่าวได้ว่าในระยะนี้หากมีการทดสอบระบบจะยังไม่ใช่การใช้เงินจริงในการทดสอบ  -->
-## ช่วงระยะเตรียมปล่อยออกสู่สาธารณะ (Pre-release) 
-เมื่อผ่านระยะพัฒนามาเรียบร้อยแล้วก่อนการนำระบบที่พัฒนาออกสู่ตลาดจะมีการนำระบบมาพักไว้ในช่วงที่เรียกว่า Pre-release ซึ่งเป็นช่วงที่มีการทำงานกับข้อมูลจริงทั้งหมด ภายใต้ Production environment เพียงแต่ยังไม่ได้เผยแพร่ออกสู่สาธารณะ เพราะฉะนั้นหากมีการทดสอบระบบใน Application นักพัฒนาจำเป็นต้องเปลี่ยนมาใช้ Mana application ควบคู่ไปกับการทดสอบของฝั่งนักพัฒนา
+## Pre-release
+After the development phase has passed, before the system is developed into the market, the system will be put on hold during the pre-release phase, which is when all the real data is worked with in the production environment, but not yet. released to the public Therefore, if there is a system testing in an application, developers need to switch to Mana application in parallel with developer testing.
 
-และหากนักพัฒนาต้องการจะทดสอบการใช้งานในระยะนี้ก็สามารถทำได้ ซึ่งร้านค้าที่ถูกสร้างขึ้นเพื่อทดสอบระบบขณะนั้นจะใช้ Service ของนักพัฒนาโดยจะถูกเรียกเก็บค่าใช้จ่ายเป็นเงินจริงตามที่ได้เขียนไว้ในระบบ ซึ่งรวมถึงการเก็บค่าบริการการตามสัญญาที่ได้ทำไว้กับทาง mana และเมื่อจบการทดสอบกระบวนการทำงานของระยะนี้ เงินที่ถูกจ่ายเข้ามาในระบบจะถูกคืนให้กับ Software company และร้านค้าที่ถูกสร้างขึ้นมาเพื่อทดสอบในขั้นตอนนี้จะถูกทำลายทิ้ง
+And if developers want to test the functionality at this stage, it can be done. The store that was built to test the system at that time will use the developer's service and will be charged in real money as written in the system. This includes collecting service fees for contractual contracts with mana and at the end of this phase of process testing. Funds paid into the system will be returned to the software company and the store that was created to test this process will be destroyed.
 
-ซึ่งหลังจากที่นักพัฒนาทดสอบระบบเรียบร้อยและต้องการนำระบบเผยแพร่ออกสู่สาธารณะ จะต้องมีการแจ้งเข้ามาเพื่อให้ทาง mana ทำการตรวจสอบและเตรียมดำเนินการเผยแพร่ออกสู่สาธารณะ
+After the developers have successfully tested the system and want to bring the system to the public. Must be notified in order for mana to review and prepare for public release.
 
-## ช่วงระยะเผยแพร่ (Production)
-เป็นช่วงของการนำระบบออกเผยแพร่สู่สาธารณะ เพื่อให้องค์กร ร้านค้า หรือคนทั่วไปที่สนใจในระบบนั้นๆสามารถเข้ามาใช้งานได้อย่างเต็มรูปแบบ ซึ่งนั้นรวมถึงการคิดค่าบริการตาม Service ที่มีการใช้งาน
+## Production
+It is the period of the release of the system to the public. So that organizations, shops or people who are interested in that system can use it in full. This includes a service charge based on the service being used.

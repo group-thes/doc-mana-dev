@@ -1,11 +1,11 @@
 # Overview
-**Mana application** เป็นกระเป๋าเงินอิเล็กทรอนิกส์รูปแบบหนึ่งซึ่งสามารถทำธุรกรรมการเงินส่วนบุคคล ร้านค้า หรือระดับองค์กร อีกทั้งยังเป็น Platform ชนิดหนึ่งที่เปิดให้นักพัฒนาภายนอก (3rd Party) สามารถเข้ามาพัฒนาระบบของตัวเองร่วมกันกับ mana
+**Mana application** It is a form of electronic wallet that can conduct personal, merchant, or corporate financial transactions. It is also a platform that allows external developers (3rd party) to develop their own systems together with mana.
 
-ยกตัวอย่างเช่น หากนักพัฒนาต้องการทำแอพลิเคชั่นที่เกี่ยวกับเครื่องซักผ้าหยอดเหรียญ ที่มีการสั่งให้เครื่องซักผ้าทำงานโดยอัตโนมัติเมื่อมีการสแกนจ่ายเงิน ดังนั้นจากตัวอย่างที่ยกมาข้างต้นเมื่อมี Transaction เกิดขึ้น 3rd Party จะสามารถรับรู้ข้อมูลของ Transaction นั้นได้หากทำการเชื่อมต่อกับ Service ที่ mana เปิดให้เรียกใช้ ซึ่งกระบวนการการเชื่อมต่อ Service ที่ว่านี้จะทำโดยผ่านตัวกลางที่ชื่อว่า [DevPortal](https://mana-sand-portal.developer.azure-api.net) 
+for example If developers want to make applications related to coin washing machines. That is to order the washing machine to run automatically when scanning to pay. Therefore, from the above example, when a transaction occurs, the 3rd party will be able to recognize the transaction's information if it connects to a service that mana is open to run. The process of connecting to this service is done through an intermediary called [DevPortal](https://mana-sand-portal.developer.azure-api.net) 
 
 ![a](../img/Introduction/overview/overview.PNG)
 
 **DevPortal**
-เป็นตัวกลางในการเชื่อมต่อข้อมูลระหว่างระบบของ mana กับนักพัฒนาหรือระบบของนักพัฒนาเชื่อมต่อกลับมายัง mana ทั้งนี้จัดทำขึ้นเพื่อให้นักพัฒนาสามารถเข้าถึงข้อมูลต่างๆ ได้โดยที่ยังอยู่ในขอบเขตข้อตกลงที่ถูกกำหนดไว้ 
+It is an intermediary that connects the data between the mana system and the developer or the developer's system back to the mana. provided that it is still within the scope of the agreement that has been set
 
-ซึ่งหลังจากที่นักพัฒนาทำการเชื่อมกับ DevPortal เรียบร้อยแล้วและต้องการทดลองเล่นความสามารถที่ถูกพัฒนาขึ้นมาใหม่นี้ก็สามารถทดลองเล่นได้ใน Sandbox environment  และเมื่อทีมนักพัฒนาทำการทดสอบระบบบน Sandbox environment จนเป็นที่พอใจแล้วก็สามารถ Publish service เพื่อเตรียมการ Launch ระบบให้เผยแพร่ออกสู่ตลาดเพื่อใช้งานจริง
+After developers have successfully connected to the DevPortal and want to play around with the newly developed capabilities, they can play it in a sandbox environment. Publish service to prepare the system launch for release to the market for production.

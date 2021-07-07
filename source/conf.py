@@ -39,7 +39,6 @@ templates_path = ['_templates']
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-#language = 'th'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -65,6 +64,13 @@ source_suffix = {
     '.md': 'markdown',
 }
 
-language = 'th'
+numpydoc_show_class_members = False
+latex_engine = 'lualatex'
+latex_use_xindy = False
+latex_elements = {
+    'preamble': '\\usepackage[UTF8]{ctex}\n',
+}
+
+language = 'en'
 locale_dirs = ['locale/']
 gettext_compact = False
