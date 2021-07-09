@@ -1,20 +1,19 @@
-# ขั้นตอนการอัพเกรด Tier
-หากเมื่อใดก็ตามที่นักพัฒนาต้องการที่เรียกใช้ APIs ที่หลากหลายขึ้น หรือต้องการที่จะเผยแพร่ระบบออกสู่ตลาด นักพัฒนาจำเป็นต้องใช้ Standard tier  หรือสูงขึ้นไปเท่านั้น โดยมีขั้นตอนการอัพเกรด Tier ดังนี้
+# Tier upgrade procedure
+Whenever a developer wants to run a wider variety of APIs. or want to publish the system to the market Developers are required to use Standard tier or higher only. The steps for upgrading the Tier are as follows:
 
-1.ไปยัง Mana Application และเลือกเมนูบนซ้ายสำหรับนักพัฒนา
-
+1.Go to Mana Application and select Developer menu on the left.
 ![a](../img/Quickstarts/GettingStarted/gs12.PNG)
 
-2.กด Lite ตามรูปด้านล่าง
+2.Press 'Lite' as shown below
 
 ![a](../img/Quickstarts/tireChange/lite.png)
 
-3.เลือกเปลี่ยนระดับจาก Free เป็น Standard  
+3.Choose to change the level from Free to Standard.  
 
 ![a](../img/Quickstarts/tireChange/select_tier.PNG)
 
 
-4.เลือกชำระและจ่ายเงิน
+4.Choose to pay and pay
 
 ![a](../img/Quickstarts/tireChange/payment.png)
 

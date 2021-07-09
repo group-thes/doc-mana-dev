@@ -1,12 +1,13 @@
 # Using Adhoc Service
-เป็นบริการการสร้าง QR เพื่อจ่ายเงินให้กับร้านค้าชนิดหนึ่ง ซึ่งผู้ใช้งานไม่จำเป็นต้องกรอกข้อมูลหรือรายเอียดใดๆเพิ่มเติม สามารถใช้งานได้โดยการสแกน QR ผ่านทางแอพพลิเคชั่นใดๆก็ตามเพื่อทำการจ่ายเงินให้กับร้าน โดยหากนักพัฒนาต้องการใช้บริการสามารถทำได้ตามขั้นตอนด้านล่างดังนี้
 
-1.ทำ[การสมัครเพื่อเป็นนักพัฒนา](../Quickstarts/GettingStarted.md) ใน Mana application 
+It is a QR creation service to pay for merchants. which users do not need to fill in any additional information or details This can be used by scanning the QR code through any application to make payments to the store. If developers want to use the service, they can follow the steps below.
 
-2.สร้าง Service ที่ DevPortal ซึ่งในขั้นตอนนี้จะได้ ServiceId เพื่อเอาไว้ใช้งาน
+1.[Apply to become a developer](../Quickstarts/GettingStarted.md) in Mana application. 
 
-3.นำ ServiceId ที่ได้มาทำการ Register AdhocPaymentHook ที่ DevPortal 
+2.Create a service at DevPortal which in this step will get ServiceId to use.
 
-4.ในระยะพัฒนาหากต้องการทดสอบการทำงานต้องใช้ Mana sandbox application ในการทดสอบ
+3.Bring the obtained ServiceId to register AdhocPaymentHook at DevPortal.
 
-5.หลังจากที่มีการ Public service เรียบร้อยและต้องการทดสอบระบบก่อนการ Lanuch สามารถทดสอบได้ผ่าน Mana application บน Store
+4.In the development phase, if you want to test the functionality, you must use the Mana sandbox application for testing.
+
+5.After the public service has been completed and want to test the system before Lanuch, it can be tested through the Mana application on the Store.

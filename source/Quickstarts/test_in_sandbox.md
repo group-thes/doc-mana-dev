@@ -1,20 +1,20 @@
-# การทดสอบการทำงานใน Sandbox environment
+# Testing functionality in a Sandbox environment
 
-หากเมื่อใดก็ตามที่นักพัฒนาต้องการทำการทดสอบ Application ที่ถูกสร้างขึ้นใน Sandbox environment นักพัฒนาจำเป็นต้องใช้ Mana sandbox application ควบคู่ไปกับการทดสอบ
+If at any time a developer wants to test an application created in a sandbox environment, they need to use the Mana sandbox application alongside the test.
 
-## การเปิดใช้งาน Mana sandbox application
+## Activating the Mana sandbox application
 
-1.ผู้ใช้ทำการโหลด Mana sandbox application จาก Store (AppStore, PlayStore)
+1.User load Mana sandbox application from Store (AppStore, PlayStore).
 
-2.ทำการ Log in เพื่อใช้งานโดยมีวิธีการดังนี้
+2.Log in to use with the following methods.
 
-* 2.1 ระบุหมายเลขโทรศัพท์เพื่อรับรหัส OTP
+* 2.1 Enter a phone number to receive an OTP.
 
-* 2.2 ระบุอีเมลล์เพื่อรับรหัส Code
+* 2.2 Enter your email to receive the code
 
-3.ทำการตั้งชื่อที่ใช้ในระบบ
+3.Set the name used in the system.
 
-4.ตั้งค่า Pin ในการใช้งานครั้งแรก หลังจากนั้นจึงสามารถเข้าสู่หน้าหลักของ Mana sandbox application ได้
+4.Set the Pin for the first time use. After that, you can go to the main page of Mana sandbox application.
 
 
 

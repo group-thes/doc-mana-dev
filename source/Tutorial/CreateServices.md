@@ -1,15 +1,15 @@
-# การสร้าง Service
-**Service** หรือระบบที่ถูกสร้างขึ้นมาเพื่อรองรับหรือตอบโจทย์กับการใช้งานในธุรกิจต่างๆ ซึ่งระบบที่ว่านี้จะถูกพัฒนาโดยนักพัฒนาภายนอก (3rd party)
-ซึ่งหากนักพัฒนาจะสร้าง Service ต้องทำการสร้างใน Devportal โดยมีขั้นตอนดังนี้
+# Service creation
 
-1.เลือกหมวด [API Service Management](../apis/APIs.md) เลือก Create Service และ Try it
+**Service** or system that has been created to support or meet the needs of various business applications. This system will be developed by external developers (3rd party). If developers create a Service, they have to create it in developers with the following steps.
+
+1.Select the [API Service Management](../apis/APIs.md) category, select Create Service and 'Try it'.
 
 ![a](../img/Tutorial/createService/serviceManage.jpg)
 
-2.กรอกข้อมูลให้ครบถ้วน
+2.Fill out the information completely.
 
 ![a](../img/Tutorial/createService/tryit.jpg)
 
-3.หลังจากทำการสร้าง Service เป็นที่เรียบร้อยแล้ว นักพัฒนาจะได้รับ ServiceID กลับมาซึ่งในการเข้าใช้งาน APIs อื่นๆ อาจต้องทำการส่ง ServiceID แนบไปด้วย
+3.After the service has been created successfully. The developer gets the ServiceID back, which in order to access other APIs may require a ServiceID attached.
 
 ![a](../img/Tutorial/createService/serviceId.jpg)

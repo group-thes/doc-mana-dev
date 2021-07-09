@@ -1,17 +1,14 @@
-# การใช้ APIs [POST] RegisterLoginFlow
+# Using APIs [POST] RegisterLoginFlow 
 
-การเรียกใช้ APIs RegisterLoginFlow จะได้ค่า LoginId  เพื่อให้ทางนักพัฒนาระบบมาทำการตั้งค่า Config ใน Service ที่ทางนักพัฒนาระบบทำขึ้น   
+Calling APIs RegisterLoginFlow will get LoginId for the developer to configure the service that the developer created.
 
 
-1.เข้ามาที่ devportal แล้วทำการ Login
+1.Go to devportal and login
+2.Navigate to APIs and go to the Service Management category.
+3.Click on APIs post ResgisterLoginFlow and press Try it.
+5.Take the ServiceId value obtained from the creation of Services and put it in the value of serviceId.
 
-3.เข้าใน APIs แล้วไปที่หมวดหมู่ Service Management
-
-4.กดที่ APIs post ResgisterLoginFlow แล้วกด Try it 
-
-5.เอาค่า ServiceId ที่ได้จากตอนสร้าง Services  มาใส่ใน ค่า Value ของ serviceId
-
-ใส่ค่าใน Body ตัวอย่าง
+Put a value in the example body.
 ```
 {
   "baId": "string",
@@ -26,18 +23,18 @@
   "appCallback": "string"
 }
 ```
-กรอกข้อมูลครบแล้วกด Send เพื่อเอาค่า LoginId ได้เลย
 
+Fill in all the information and press Send to get the LoginId value.
 
-# ระบบ 3rd Login 
+# 3rd Login System 
 
-1.สร้างหน้า web เพื่อให้ User Login
+1.Create a web page for User Login.
 
-2.User กด Login มีการเรียกใช้ API IDP(เปลี่ยนชื่อ API) โดยการส่งค่า ServiceId และ LoginId
+2.User press Login and call API IDP(Rename API) by sending ServiceId and LoginId.
 
-3.API IDP(เปลี่ยนชื่อ API) ตอบ URL กลับมาแล้วสร้างเป็น QR หรือ AppLink
+3.API IDP(Rename API) Reply URL back and generate as QR or AppLink.
 
-4.ใช้ App mana scan QR
+4.Use App mana scan QR
 
 
 

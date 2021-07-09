@@ -1,21 +1,20 @@
 # FromSandbox to Production
+During the development of a system, a developer is usually given a Sandbox key (Subscriptions key) as a precursor upon completion of the application. Configuration Or setting a BaseURL to connect to the mana APIs, accessing the key can be done by logging in to the DevPortal and viewing it through the Profile menu.
 
-ในระหว่างการพัฒนาระบบโดยปกติแล้วเมื่อทำการสมัครเป็นนักพัฒนาเรียบร้อยแล้วจะได้รับ Sandbox key (Subscriptions key) เป็นตัวตั้งต้นซึ่งสามารถนำ key ที่ได้รับไปใช้ในระบบของทีมนักพัฒนาไม่ว่าจะเป็นการทำ Configuration หรือการตั้งค่า ฺBaseURL เพื่อทำการเชื่อมต่อกับ APIs ของ mana โดยการเข้าถึง Key นั้นสามารถทำได้ผ่านการ Sign in เข้าสู่ DevPortal และดูข้อมูลผ่านเมนู Profile
-
-1.ทำการ Sign in ใน Devportal และไปที่เมนู Profile เพื่อนำ Key มาใช้งาน 
+1.Sign in in Devportal and go to Profile menu to apply Key. 
 
 ![a](../img/Tutorial/sand2prod/getkey1.png)
 
-2.ในเมนู Profile จะแสดงข้อมูลของ Key ตามระดับของ Tier ที่ลงทะเบียนไว้
+2.In the Profile menu, it will show the information of the Key according to the Tier level registered.
 
 ![a](../img/Tutorial/sand2prod/getkey2.png)
 
-หากนักพัฒนาต้องการที่จะ[อัพเกรด Tier เป็นระดับ Standard หรือสูงขึ้น](../Quickstarts/stepUpgrade_tier.md)เพื่อขอสิทธิ์เข้าถึงข้อมูลที่มากขึ้น เมื่อทำการอัพเกรด Tier แล้วจะสามารถเรียกใช้ APIs ได้มากขึ้นตามระดับ Tier ที่ได้อัพเกรดไว้ ซึ่งรวมถึงการ Publish service
+If developers wish to [ upgrade Tier to Standard or higher ](../Quickstarts/stepUpgrade_tier.md)to request more access to data. Once a Tier is upgraded, more APIs can be used as the Tier Tier is upgraded. This includes the Publish service.
 
-ฉะนั้นการ Publish service จึงเป็นการเตรียมการเปลี่ยนจากช่วงระยะพัฒนา (Development) ไปยังระยะเตรียมปล่อยระบบออกสู่สาธารณะ (Pre-release) ตาม[วงจรการพัฒนาระบบ](../Introduction/DevelopmentCycle.md) และรวมถึงการเตรียมการเปลี่ยนจาก Sandbox มาใช้ Production environment 
+Therefore, the Publish service is a preparation for the transition from the development phase. (Development) to the preparatory phase for the release of the system to the public (Pre-release) according to the [system development cycle](../Introduction/DevelopmentCycle.md) and including preparing to switch from sandbox to production environment
 
-ดังนั้นหากต้องการเชื่อมต่อกับ APIs ของ Production environment จำเป็นต้องใช้ Production Key ในการทำงานซึ่งการจะนำ Production Key มาใช้งานนั้นต้องทำการเรียกผ่าน API (production subscriptions) ใน DevPortal และทำการ Configure หรือตั้งค่า ฺBaseURL เพื่อทำการเชื่อมต่อกับ APIs ของ Production environment 
+Therefore, in order to connect to the APIs of a production environment, a Production Key is required. To implement the Production Key, you need to call APIs (production subscriptions) in the DevPortal and configure or set a BaseURL to connect. Connect to production environment APIs
 
-รูปตัวอย่าง call api
+call api sample image
 
-และหลังจากที่ทีมนักพัฒนาได้มีการทดสอบระบบในช่วง Pre-release เป็นที่เรียบร้อยแล้ว หากต้องการนำระบบเผยแพร่ออกสู่สาธารณะ จะต้องมีการแจ้งเข้ามาเพื่อให้ทาง mana ทำการตรวจสอบและเตรียมดำเนินการเผยแพร่ออกสู่สาธารณะผ่านการเรียกใช้ API (Service publish)
+And after the development team has already tested the system in the pre-release period. To bring the system to the public There must be a notification for mana to review and prepare to release it to the public via API calls (Service publish).
