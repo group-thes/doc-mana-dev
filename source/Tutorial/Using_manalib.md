@@ -1,5 +1,5 @@
 # Mana library
-ใน Mana application จะมีการอนุญาตให้ 3rd party ทำการ [Register mContent](www.google.com) เพื่อนำหน้าเว็บที่ทาง 3rd party พัฒนามาแสดงใน Mana application ซึ่งหน้าเว็บที่จะนำมาแสดงสามารถเรียกใช้ความสามารถตามที่ [Mana library](../APIs/Manalib.md) ระบุไว้ซึ่งหากนักพัฒนาต้องการเรียกใช้งานจะมีขั้นตอนดังนี้
+ใน Mana application จะมีการอนุญาตให้ 3rd party ทำการ [Register mContent](www.google.com) เพื่อนำหน้าเว็บที่ทาง 3rd party พัฒนามาแสดงใน Mana application ซึ่งหน้าเว็บที่จะนำมาแสดงสามารถเรียกใช้ความสามารถตามที่ [Mana library](../APIs/Manalib.md) ระบุไว้โดยมีวิธีการติดตั้งและเรียกใช้งานดังนี้
 ## การติดตั้งและเรียกใช้งาน Mana Library ใน Html
 ### วิธีการติดตั้ง
 1.ติดตั้ง Mana Library ผ่าน Command prompt
@@ -15,7 +15,7 @@ npm install manawallib
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 </head>
 ```
-### การเรียกใช้งาน
+### ตัวอย่างการใช้งาน
 การเรียกใช้งานคำสั่งต่างๆใน Mana Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง initPageApi เป็นอันดับแรก เพื่อเป็นการตั้งค่าเพจให้พร้อมสำหรับการทำงานและหลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป
 ```
 <!DOCTYPE html>
@@ -59,20 +59,20 @@ import { IonManaLib } from 'manawallib-ion';
     ],
 })
 ```
-* สำหรับการ Run locale test สามารถใส่ .SetConfiguration("svcid","key") หลัง IonManaLib เพื่อแสดงหน้าตา UI  
+* สำหรับการ Run locale test สามารถใส่ .SetConfiguration("svcid" ,"key") หลัง IonManaLib เพื่อแสดงหน้าตา UI  
 ```
 import { IonManaLib } from 'manawallib-ion';
 ...
 @NgModule({
     providers: [
         ...
-        IonManaLib.SetConfiguration("svcid","key"),
+        IonManaLib.SetConfiguration("svcid" ,"key"),
         ...
     ],
 })
 ```
-### การเรียกใช้งาน
-การเรียกใช้งานคำสั่งต่างๆใน Mana Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง initPageApi เป็นอันดับแรก เพื่อเป็นการตั้งค่าเพจให้พร้อมสำหรับการทำงานและหลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป
+### ตัวอย่างการใช้งาน
+การเรียกใช้งานคำสั่งต่างๆใน Mana Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง "initPageApi" เป็นอันดับแรก เพื่อเป็นการตั้งค่าเพจให้พร้อมสำหรับการทำงานและหลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป
 ```
 <!DOCTYPE TS>
 
