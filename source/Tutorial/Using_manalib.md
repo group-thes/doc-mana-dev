@@ -1,7 +1,7 @@
 # Mana library
-ใน Mana application จะมีฟังก์ชั่นที่อนุญาตให้ 3rd party ทำการ [Register mContent](https://www.google.com "Google's Homepage") เพื่อนำหน้าเว็บที่ทาง 3rd party พัฒนามาแสดงใน Mana application ซึ่งหน้าเว็บที่จะนำมาแสดงสามารถเรียกใช้ความสามารถตามที่ **Mana library** เขียนไว้ หากนักพัฒนาต้องการเรียกใช้งานจะมีขั้นตอนดังนี้
-## การติดตั้ง Mana Library 
-### ติดตั้งใน Html
+ใน Mana application จะมีการอนุญาตให้ 3rd party ทำการ [Register mContent](www.google.com) เพื่อนำหน้าเว็บที่ทาง 3rd party พัฒนามาแสดงใน Mana application ซึ่งหน้าเว็บที่จะนำมาแสดงสามารถเรียกใช้ความสามารถตามที่ [Mana library](../APIs/Manalib.md) ระบุไว้ซึ่งหากนักพัฒนาต้องการเรียกใช้งานจะมีขั้นตอนดังนี้
+## การติดตั้งและเรียกใช้งาน Mana Library ใน Html
+### วิธีการติดตั้ง
 1.ติดตั้ง Mana Library ผ่าน Command prompt
 ```
 npm install manawallib
@@ -15,7 +15,32 @@ npm install manawallib
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 </head>
 ```
-### ติดตั้งใน Ionic (รองรับการใช้การสำหรับ Ionic4)
+### การเรียกใช้งาน
+การเรียกใช้งานคำสั่งต่างๆใน Mana Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง initPageApi เป็นอันดับแรก เพื่อเป็นการตั้งค่าเพจให้พร้อมสำหรับการทำงานและหลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        ....
+    </head>
+    <body>
+        <script>
+            var lib;
+            $(document).ready(async function () {
+                lib = await manawallib.GetLib();
+                await lib.initPageApi("mcontentId");
+                var result = await lib.getApiData("mcontentId");
+            });
+            function Confirm()
+            {
+                lib.SubmitFormData("mcontentId",data);
+            }
+        </script>
+    </body>
+</html>
+```
+## การติดตั้งและเรียกใช้งาน Mana Library ใน Ionic (รองรับการทำงานสำหรับ Ionic4)
+### วิธีการติดตั้ง
 1.ติดตั้ง Mana Library ผ่าน Command prompt
 ```
 npm install manawallib-ion
@@ -46,29 +71,23 @@ import { IonManaLib } from 'manawallib-ion';
     ],
 })
 ```
-## การเรียกใช้งาน Mana Library
-1.ในการใช้งานลำดับแรกทาง mana แนะนำให้เรียกใช้งาน initPageApi เพื่อเป็นการเตรียมหน้าเพจให้พร้อมใช้งาน
-### การใช้งานใน Html
+### การเรียกใช้งาน
+การเรียกใช้งานคำสั่งต่างๆใน Mana Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง initPageApi เป็นอันดับแรก เพื่อเป็นการตั้งค่าเพจให้พร้อมสำหรับการทำงานและหลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป
 ```
-<!DOCTYPE html>
-<html>
-    <head>
-        ....
-    </head>
-    <body>
-        <script>
-            var lib;
-            $(document).ready(async function () {
-                lib = await manawallib.GetLib();
-                await lib.initPageApi("2354512");
-                var result = await lib.getApiData("2354512");
-            });
-            function Confirm()
-            {
-                lib.SubmitFormData("2354512",data);
-            }
-        </script>
-    </body>
-</html>
+<!DOCTYPE TS>
+
+import { IonManaLib } from 'ion-m-lib';
+
+public mcontentid = "user-profile";
+constructor(private svc: IonManaLib) { }
+
+private loadData$() {
+    return this.svc.initPageApi(this.mcontentid).then(() => {
+    return this.svc.getApiData(this.mcontentid);})
+}
+
+onSave() {
+    if (this.fg.valid) {
+        this.svc.submitFormData(this.mcontentid, this.fg.value);}
+}
 ```
-### การใช้งานใน Ionic (รองรับการใช้การสำหรับ Ionic4)
