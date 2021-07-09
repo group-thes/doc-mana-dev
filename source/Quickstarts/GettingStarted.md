@@ -1,104 +1,98 @@
-# การ Register สำหรับนักพัฒนา 
-จะสามารถทำได้ก็ต่อเมื่อมีการเปิดใช้งาน Mana User เพื่อยืนยันตัวตนเป็นอันดับแรก และเมื่อทำกระบวนการการยืนยันตัวตนเรียบร้อยแล้วจึงจะสามารถ Register Fuction สำหรับนักพัฒนา ตามรูปแบบด้านล่างดังนี้
+# Registering for Developers  
+This can only be done if Mana User is enabled for authentication first. And once the authentication process is complete, you can register the developer fuction. according to the format below:
 
 ![a](../img/Quickstarts/GettingStarted/gs0.PNG)
-## การเปิดใช้งาน Mana User
+## Mana User Activation
 
- 1.ผู้ใช้ทำการโหลด Mana Application จาก Store (AppStore, PlayStore)
+ 1.User load Mana Application from Store (AppStore, PlayStore).
 
 ![a](../img/Quickstarts/GettingStarted/gs1.PNG)
 
- ภาพที่1 (ซ้าย) Mana Application บน Store ของ Android  ,
-(ขวา) Mana Application บน Store ของ IOS   
+Figure  1 (left) Mana Application on Android Store , (Right) Mana Application on IOS Store
 
- 2.ทำการ Log in เพื่อใช้งานโดยมีวิธีการดังนี้
+ 2.Log in to use with the following methods.
  
-2.1 ระบุหมายเลขโทรศัพท์เพื่อรับรหัส OTP
+2.1 Enter a phone number to receive an OTP code.
 
 ![a](../img/Quickstarts/GettingStarted/gs2.PNG)
 
-ภาพที่2  (ซ้าย) การระบุหมายเลขโทรศัพท์เพื่อรอรับ OTP,
-(ขวา) การกรอก OTP ที่ได้รับจาก Message 
+Figure  2 (Left) Specifying a phone number to receive OTP, (Right) Entering OTP received from Message 
 
-2.2 ระบุอีเมลล์เพื่อรับรหัส Code 
+2.2 Enter your email to receive the code 
 
 ![a](../img/Quickstarts/GettingStarted/gs3.PNG)
 
-ภาพที่3 (ซ้าย) การระบุอีเมลล์เพื่อรอรับรหัส Code,
-(ขวา) การกรอกรหัส Code ที่ได้รับจากอีเมลล์ 
+Figure  3 (left) specifying an email to receive a code, (right) entering a code received from an email
 
- 3.ทำการตั้งชื่อที่ใช้ในระบบ
+ 3.Set the name used in the system.
 
 ![a](../img/Quickstarts/GettingStarted/gs4.PNG)
 
-ภาพที่4 การตั้งชื่อใน  Display name
+Figure  4 Naming in Display name
 
- 4.ตั้งค่า Pin ในการใช้งานครั้งแรก หลังจากนั้นจึงสามารถเข้าสู่หน้าหลักของ Mana Application ได้
+ 4.Set the Pin for the first time use. After that, you can go to the main page of Mana Application.
 
 ![a](../img/Quickstarts/GettingStarted/gs5.PNG)
 
-ภาพที่5 (ซ้าย) การ Setup PIN ในการใช้งานครั้งแรก,
-(ขวา) การยืนยันการ Setup PIN
+Figure 5 (Left) Setup PIN for first use, (Right) Confirmation of Setup PIN.
 
- 5.หากต้องการเข้าสู่ระบบในภายหลังสามารถใช้ Pin ที่ถูกตั้งค่าไว้
+ 5.If you want to log in later, you can use the pin that was set.
 
 ![a](../img/Quickstarts/GettingStarted/gs6.PNG)
 
-ภาพที่6 (ซ้าย) การแสดงผลของผู้ใช้ที่เคยลงทะเบียนแล้ว,
-(ขวา) การกรอก PIN ที่เคย Setup ไว้ 
+Figure 6 (Left) Display of the registered user, (Right) Entering the PIN that has been set up.
 
-## การสมัครเพื่อเป็นนักพัฒนา
- 1.กด Side menu แล้วเลือกเมนู 'สำหรับนักพัฒนา'
+## Applying to become a developer 
+ 1.Press Side menu and select menu. 'For developers'
 
 ![a](../img/Quickstarts/GettingStarted/gs7.PNG)
 
-ภาพที่7 เมนูสำหรับนักพัฒนา
+Figure 7. Developer menu.
 
- 2.หน้าเลือกบัญชีสำหรับนักพัฒนาจะมีรายการของธุรกิจทั้งหมดที่คุณเป็นเจ้าของและหรือเป็นพนักงาน ซึ่งหากกดเครื่องหมาย + ด้านบนขวา จะเป็นการสร้างบัญชีนักพัฒนา
+ 2.The developer account selection page contains a list of all businesses that you own and/or employ. If you press the + sign on the top right, it will create a developer account.า
 
 ![a](../img/Quickstarts/GettingStarted/gs8.PNG)
 
-ภาพที่8 หน้าเลือกบัญชีสำหรับนักพัฒนา
+Figure 8 Developer account selection page.
 
- 3.การสร้างบัญชีนักพัฒนาจำเป็นต้องกรอกข้อมูลตามภาพเพื่อทำการสร้างบัญชีใหม่ (เช่น ตั้งชื่อบัญชีนักพัฒนา, รูปภาพ, เบอร์โทร และสถานที่ตั้ง) 
+3.Creating a developer account is required to fill in the information as shown in the picture in order to create a new account (eg developer account name, picture, phone number and location). 
 
 ![a](../img/Quickstarts/GettingStarted/gs9.PNG)
 
-ภาพที่9  หน้าสร้างบัญชีนักพัฒนา
+Figure 9 Developer account creation page
 
- 4.เมื่อกรอกข้อมูลหน้าสร้างบัญชีนักพัฒนาเรียบร้อยแล้ว จะต้องรอการอนุมัติจาก Mana จึงจะเป็นการสำเร็จการสร้างบัญชีนักพัฒนา
+4.When you complete the developer account creation page. Will need to wait for Mana approval to successfully create a developer account.
 
 ![a](../img/Quickstarts/GettingStarted/gs10.PNG)
 
-ภาพที่10 รอการอนุมัติจาก Mana
+Figure 10 is awaiting approval from Mana.
 
- 5.เมื่อ Mana ยืนยันการอนุมัติแล้วทางนักพัฒนาจะสามารถใช้งาน DevPortal ได้และจะสามารถปรับแต่งการใช้งานบัญชีนักพัฒนาได้ดังรูป
+5.Once Mana has confirmed approval, developers will be able to use DevPortal and will be able to customize developer account usage as shown below.
 
 ![a](../img/Quickstarts/GettingStarted/gs11.PNG)
 
- ภาพที่11 (ซ้าย) การใช้งานบัญชีนักพัฒนาแบบเบื้องต้น,(ขวา) การใช้งานบัญชีนักพัฒนาอย่างเต็มรูปแบบ
+Figure 11 (Left) Basic Developer Account Usage, (Right) Full Developer Account Usage
 
- 6.หากกลับมาที่หน้าเลือกบัญชีสำหรับนักพัฒนาอีกครั้งจะแสดงรายการธุรกิจที่ได้รับการอนุมัติจาก Mana 
+6.If you return to the Developer Account Select page again, a list of Mana approved businesses will be displayed. 
 
 ![a](../img/Quickstarts/GettingStarted/gs12.PNG)
 
-ภาพที่12 หน้าเลือกบัญชีสำหรับนักพัฒนา
+Figure 12 Developer account selection page
+## Logging in to access the DevPortal 
 
-## การ Log in เพื่อเข้าใช้งาน DevPortal
-
-1.เปิดหน้า [DevPortal](https://mana-apim-sandbox-test.developer.azure-api.net/) เพื่อทำการ Sign in
+1. Open the [DevPortal](https://mana-apim-sandbox-test.developer.azure-api.net/) page to sign in.
 
 ![a](../img/Quickstarts/GettingStarted/slm1.PNG)
 
-2.ใช้ Mana application สแกนเพื่อเข้าใช้งาน [ดูวิธีเปิดใช้งาน Mana User](GettingStarted.md)
+2.Use Mana application to scan to access. [ Learn how to enable Mana User.](GettingStarted.md)
 
 ![a](../img/Quickstarts/GettingStarted/slm2.PNG)
 
 <!-- 3.เมื่อ[สมัครเป็นนักพัฒนา](GettingStarted.md) เรียบร้อยแล้ว ต้องทำการสแกนเพื่อ Log in เข้าใช้งาน DevPortal ทาง mana จะมีการส่งคำขออนุญาตเพื่อใช้งาน DevPortal -->
-3.จะมีการส่งคำขออนุญาตเพื่อยืนยันการใช้งาน DevPortal ใน Mana application 
+3.A request for authorization will be sent to verify the use of DevPortal in the Mana application.
 
 ![a](../img/Quickstarts/GettingStarted/slm3.jpg)
 
-4.เลือกอนุญาตและยืนยันเพื่อ Login เข้าสู่ Devportal 
+4.Select Allow and confirm to Login to Devportal.
 
 ![a](../img/Quickstarts/GettingStarted/slm4.PNG)
