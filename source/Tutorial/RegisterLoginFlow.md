@@ -1,4 +1,4 @@
-# Using APIs [POST] RegisterLoginFlow 
+# RegisterLoginFlow
 
 Calling APIs RegisterLoginFlow will get LoginId for the developer to configure the service that the developer created.
 
@@ -26,7 +26,7 @@ Put a value in the example body.
 
 Fill in all the information and press Send to get the LoginId value.
 
-# 3rd Login System 
+## 3rd Login System 
 
 1.Create a web page for User Login.
 

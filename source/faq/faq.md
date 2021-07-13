@@ -1,43 +1,43 @@
 # FAQs
 
-**1.Devportal คืออะไร ?**
-> Devportal คือพื้นที่ที่เปิดให้บริการสำหรับนักพัฒนาเข้ามาใช้งานกับ APIs ต่างๆที่ทาง mana เปิดให้ใช้บริการ 
+**1.What is Devportal ?**
+> Devportal is a platform where developers can access the APIs that mana has made available.
 
-**2.ใครสามารถเข้าใช้งาน Devportal ได้ ?**
-> กลุ่มนักพัฒนาทั่วไปหรือองค์กรที่มีความสนใจจะพัฒนาระบบร่วมกันกับ mana สามารถสมัครเป็นนักพัฒนาเพื่อใช้งาน Devportal
+**2.Who can access Devportal ?**
+> General developers or organizations interested in co-developing a system with mana can apply as a developer to use Devportal.
 
-**3.ประโยชน์ของการใช้งาน Devportal คืออะไร ?**
-> เมื่อนักพัฒนาเข้ามาที่ Devportal ก็จะทราบได้ทันทีว่ามี APIs ใดบ้างและมีการเรียกใช้งานอย่างไร ซึ่งสามารถทดลองเรียกใช้งานออนไลน์ได้ทันทีและสำหรับบาง API จำเป็นต้องมีสิทธิ (Tier) ในการเข้าถึง
+**3.What are the benefits of using Devportal ?**
+> Once a developer comes to Devportal, they know exactly what APIs are available and how they are implemented. which can be tried to run online immediately and for some APIs require (Tier) access
 
-**4.มีค่าใช้จ่ายในการใช้ Devportal  หรือไม่ ?**
-> ใน [Plan & Pricing](../Plan&Pricing/Plan&Pricing.md) จะมีการคิดค่าบริการตามระดับ Tier ที่ได้ทำการสมัคร ซึ่งหากนักพัฒนายังไม่แน่ใจว่าจะใช้งานดีหรือไม่สามารถลองใช้งานเบื้องต้นได้กับระดับ Free tier
+**4.Is there any cost to use Devportal ?**
+>[Plan & Pricing](../Plan&Pricing/Plan&Pricing.md) there will be a service charge based on the Tier level subscribed. If the developer is still not sure if it will work well or can't try the basics with the Free tier level.
 
-**5.Devportal  มีบริการอะไรบ้าง ?**
-> Devportal มีหมวดหมู่ [APIs](../apis/APIs.md) ให้บริการให้เลือกใช้มากมาย เช่น Products and Orders Transaction Management และอื่นๆอีกมากมาย
+**5.What services does Devportal provide ?**
+> Devportal has a wide range of APIs to choose from such as Products and Orders Transaction Management and more.
 
-**6.จะสามารถรับและเข้าถึงข้อมูลของ Devportal ได้อย่างไร ?**
-> Devportal มี APIs ให้ใช้บริการ ดังนั้นการรับส่งข้อมูลจะเป็นในรูปแบบการยิง APIs เพื่อรับและส่งข้อมูลไปมากับทาง Server ของ Mana
+**6.How can I get and access Devportal data ?**
+> Devportal has APIs available, so traffic takes on the form of firing APIs to send and receive data back and forth to Mana's servers.
 
-**7.ความปลอดภัยของ Devportal ?**
-> เนื่องจากเราใช้ระบบ IDP ในการระบุตัวตนสำหรับการเข้าใช้งาน Devportal และ ในบัญชี Free tier APIs ที่ทุกตัวที่เปิดให้บริการจะอยู่ใน SandBox environment เท่านั้นซึ่งจะไม่มีผลกระทบใดๆกับ APIs บน Production
+**7.Safety of Devportal ?**
+> As we use the IDP system to authenticate for Devportal access and in the Free tier account, all APIs that are available are in the SandBox environment only, this will not affect the APIs on production.
 
-**8.Devportal มีเงื่อนไขในการเข้าร่วมหรือไม่ ?**
-> การจะเข้ามาทำงานกับ Devportal จำเป็นจะต้องเปิดใช้งาน Mana User เพื่อสมัครเป็นนักพัฒนาเสียก่อนจึงจะสามารถเข้าใช้งานได้  
+**8.Devportal, is there a condition for participation ?**
+> To work with Devportal, you will need to enable Mana User to become a developer before you can access it.
 
-**9.การสมัครเข้าร่วมใช้งาน Devportal ใช้เวลานานหรือไม่ ?**
-> การสมัครใช้เวลาไม่นาน แต่จำเป็นจะต้องรอให้ผู้ให้บริการตรวจสอบและอนุมัติการใช้งานบัญชีสำหรับนักพัฒนาจึงจะสามารถเข้าใช้งานได้
+**9.How long does it take to sign up for Devportal ?**
+> Applying doesn't take long. You will need to wait for the developer account to be reviewed and approved by the service provider before you can access it.
 
-**10.สัญญาของ Devportal มีวันหมดอายุหรือไม่ ?**
-> หากเป็นบัญชี Free tier จะไม่มีวันหมดอายุ แต่ถ้าหากเป็นบัญชีที่อยู่ในระดับ Standard หรือ offical จำเป็นจะต้องต่ออายุแบบรายปี ตามที่ระบุไว้ [Plan & Pricing](../Plan&Pricing/Plan&Pricing.md)
+**10.Does the Devportal contract have an expiration date ?**
+> If it's a free tier account, it doesn't expire. But if it's a Standard or offical account, it needs to be renewed annually. As stated [Plan & Pricing](../Plan&Pricing/Plan&Pricing.md)
 
-**11.มีค่าใช้จ่ายในการต่อสัญญาหรือไม่ ?**
-> หากเป็นบัญชี Free tier จะไม่มีค่าใช้จ่ายในการต่อสัญญา แต่ถ้าหากเป็นบัญชีที่อยู่ในระดับ Standard หรือ offical จะต้องเสียค่าใช้จ่ายรายปี ตามที่ระบุไว้ [Plan & Pricing](../Plan&Pricing/Plan&Pricing.md)
+**11.Is there a contract renewal fee ?**
+> If it is a Free tier account, there is no contract renewal fee. But if it's a Standard or offical account, there will be an annual fee. As stated [Plan & Pricing](../Plan&Pricing/Plan&Pricing.md)
 
-**12.การเข้าใช้งาน Devportal ในฐานะนักพัฒนา มีระยะเวลากำหนดหรือไม่ ?**
-> การเข้าใช้งาน Devportal ในฐานะนักพัฒนานั้นจะมีเวลาจำกัดเข้าชมอยู่ที่ 30 นาที
+**12.Accessing Devportal as a developer Is there a time limit ?**
+> Accessing Devportal as a developer Is there a time limit
 
-**13.มีการจำกัดอัตราการส่งข้อมูลหรือไม่ ?**
-> ทาง Devportal จำกัดอัตราการส่งข้อมูลอยู๋ที่ 500 requests/sec
+**13.Is there a limit on the data transmission rate ?**
+> Devportal limits data rates to 500 requests/sec.
 
-**14.Devportal รับรอง Transaction ได้มากเพียงใด ?**
-> ทาง Devportal รองรับ transaction ได้มากที่สุด  1,000  transaction/sec
+**14.How many transactions can Devportal accept ?**
+> Devportal supports up to 1000 transactions/sec.
