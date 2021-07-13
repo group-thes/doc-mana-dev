@@ -43,6 +43,7 @@
 
 - สแกน QR แล้วไม่ตรงตามเงื่อนไขที่ตรงตามที่ 3rd กำหนดจะไม่ขึ้น Service ที่ 3rd สร้างขึ้น ดังรูป  
 
+## ระบบ 3rd Login 
 
 ![a](../img/Tutorial/RegisterLoginFlow/noshop.PNG)
 
