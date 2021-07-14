@@ -1,15 +1,33 @@
-# Mana library
+# Client library
 การแสดงหน้าเพจใน Mana มีองค์ประกอบที่สามารถแบ่งตามความสามารถได้ดังรูป    
 ![a](../img/API/manalib/manalibcom.PNG)      
 ฉะนั้นคำสั่งหรือความสามารถต่างๆที่มีใน Mana library จึงแบ่งได้ตามหัวข้อด้านล่าง
 ## Call API
 * Call API to Registered URL   
-  * Getapidata : ดึงข้อมูลจาก Server โดยการส่งระบุหน้าที่ต้องการเปิด (mcontentId) เพื่อให้ Server ตอบกลับ   
-  * getApiDataWithEndpointId // ไม่มีตัวไหนเรียกใช้    
+  * .getApiData : ดึงข้อมูลจาก Server โดยการส่งระบุหน้าที่ต้องการเปิด (mcontentId) เพื่อให้ Server ตอบกลับ   
+  * .getApiDataWithEndpointId // ไม่มีตัวไหนเรียกใช้    
 * Call Api to external    
-  * CallApiGet : ดึงข้อมูลจาก Server โดยระบุ URL ที่ได้ลงทะเบียนไว้กับ Mana  
-  * CallApiPost     // ไม่มีตัวไหนเรียกใช้  
-  * CallApiDelete    // ไม่มีตัวไหนเรียกใช้  
+  * .callApiGet : ดึงข้อมูลจาก Server โดยระบุ URL ที่ได้ลงทะเบียนไว้กับ Mana  
+  * .callApiPost     // ไม่มีตัวไหนเรียกใช้  
+  * .callApiDelete    // ไม่มีตัวไหนเรียกใช้  
+```typescript
+export class DemoPage implements OnInit {
+
+  constructor(private svc: IonManaLib) { }
+
+  private loadData$() {
+    return this.svc.initPageApi(this.mcontentid)
+      .then(_ => {
+
+        // ดึงข้อมูลโดยระบุหน้าเพื่อให้ Server ส่งข้อมูลหน้านั้นๆมาโดยตรง
+        return this.svc.getApiData(this.mcontentid);
+
+        // ดึงข้อมูลโดยตรงผ่าน URL ที่ลงทะเบียน
+        // return this.svc.callApiGet(this.mcontentid, this.apiUrl);
+      })
+  }
+}  
+```  
 
 ## Form 
 เป็นรูปแบบของการกรอกข้อมูลเพื่อส่งข้อมูลเข้าไปประมวลผลในฝั่ง Server โดยมี Form ดังต่อไปนี้
@@ -58,7 +76,7 @@ export class DemoPage implements OnInit {
   }
 }  
 ```
-* .selectimage //เลือกรูปที่อยู่ในฟอร์ม ex:merchant-profile-image-edit
+* .selectimage : เลือกรูปที่อยู่ในฟอร์ม //ex:merchant-profile-image-edit รอตัวใหม่ของพี่โต??
 * .optionDialog : เป็นการเปิดหน้าเพจที่เป็น Dialog ซึ่งเพจที่เปิดนั้นสามารถเป็นฟอร์มที่ให้กรอกข้อมูลได้หลายรูปแบบ
 ```typescript
 export class DemoPage implements OnInit {
@@ -96,6 +114,7 @@ html
 * .setGpsSection : ใช้กำหนดตำแหน่ง GPS ที่อยู่ใน body ด้านบนของมานะ
 ```typescript
 export class DemoPage implements OnInit {
+
   constructor(private svc: IonManaLib) { }
 
   ionViewDidEnter() {
@@ -145,7 +164,7 @@ export class DemoPage implements OnInit {
   this.refreshCallBack();
   }
 
-  //
+  //Action ที่จะถูกนำไปแสดงในเพจซึ่งจะทำงานตามฟังก์ชั่นที่เขียนไว้
   public onTabToolbarItem(action) {
     switch (action) {
       case "Add": this.Add(); break;
@@ -153,7 +172,7 @@ export class DemoPage implements OnInit {
     }
   }
 
-  //ฟังก์ชั่นการทำงานที่ถูกเขียนไว้ตาม action 
+  //ฟังก์ชั่นการทำงานที่ถูกเขียนไว้ตาม Action 
   public Add() {
     if(this.createEnpointUrl) this.svc.visitEndpoint(this.mcontentid, this.createEnpointUrl);
   }
@@ -165,6 +184,7 @@ export class DemoPage implements OnInit {
 * .visitEndpoint : เป็นการเปิดหน้าเพจตาม URL ที่ได้ลงทะเบียนไว้กับ Mana
 ```typescript
 export class DemoPage implements OnInit {
+
   constructor(private svc: IonManaLib) { }
 
   public onManage() {
@@ -212,7 +232,9 @@ export class DemoPage implements OnInit {
 เมื่อแอพได้รับ Notification หรือ SignalR หน้าๆนั้นจะทำการแสดงข้อมูลตามฟังก์ชั่นที่เขียนไว้
 ```typescript
 export class DemoPage implements OnInit {
+
   constructor(private svc: IonManaLib) { }
+
   ionViewDidEnter() {
     this.svc.setStateChangedHandler((param) => this.OnStateChanged(param));
     this.refreshCallBack();
@@ -227,7 +249,9 @@ export class DemoPage implements OnInit {
 หากมีการ Navigate ไปหน้าอื่นและมีการกลับมาที่หน้าเดิมอีกครั้งจะสั่งให้หน้าเพจทำอะไรต่อ หรือหากมีการพับแอพลงเมื่อเปิดแอพขึ้นมาอีกครั้งหน้าที่ถูกเปิดค้างไว้จะให้ทำอะไรต่อ
 ```typescript
 export class DemoPage implements OnInit {
+
   constructor(private svc: IonManaLib) { }
+
   private loadData$() {
     // ในที่นี้คือทำตามคำสั่งที่ของฟังก์ชั่น refreshCallBack
     return this.svc.initPageApiWithCallBack(this.mcontentid, () => this.refreshCallBack())
@@ -238,4 +262,7 @@ export class DemoPage implements OnInit {
 }  
 ```      
 * .initPageApi : ระบุหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง
-        
+
+
+https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.find?view=net-5.0
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length

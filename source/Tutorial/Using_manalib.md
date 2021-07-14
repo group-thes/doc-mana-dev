@@ -1,4 +1,4 @@
-# Mana library
+# Client library
 ใน Mana application จะมีสามารถให้ 3rd party ทำการ [Register mContent](www.google.com) เพื่อนำหน้าเว็บที่ทาง 3rd party พัฒนามาแสดงใน Mana application ซึ่งหน้าเว็บที่จะนำมาแสดงสามารถเรียกใช้ความสามารถตามที่ [Mana library](../APIs/Manalib.md) ระบุไว้โดยมีวิธีการติดตั้งและเรียกใช้งานดังนี้
 ## การติดตั้งและเรียกใช้งาน Mana Library ใน Html
 ### วิธีการติดตั้ง
