@@ -1,8 +1,8 @@
 # Client library
-ใน Mana application จะมีสามารถให้ 3rd party ทำการ [Register mContent](www.google.com) เพื่อนำหน้าเว็บที่ทาง 3rd party พัฒนามาแสดงใน Mana application ซึ่งหน้าเว็บที่จะนำมาแสดงสามารถเรียกใช้ความสามารถตามที่ [Mana library](../APIs/Manalib.md) ระบุไว้โดยมีวิธีการติดตั้งและเรียกใช้งานดังนี้
-## การติดตั้งและเรียกใช้งาน Mana Library ใน Html
+ใน Mana application มีความสามารถให้ 3rd party ทำการ [Register mContent](www.google.com) เพื่อนำหน้าเว็บที่ทาง 3rd party พัฒนามาแสดงใน Mana application ซึ่งหน้าเว็บที่จะนำมาแสดงสามารถเรียกใช้ความสามารถตามที่ [Client library](../APIs/Manalib.md) ระบุไว้โดยมีวิธีการติดตั้งและเรียกใช้งานดังนี้
+## การติดตั้งและเรียกใช้งาน Client Library ใน Html
 ### วิธีการติดตั้ง
-1.ติดตั้ง Mana Library ผ่าน Command prompt
+1.ติดตั้ง Client Library ผ่าน Command prompt
 ```
 npm install manawallib
 ```
@@ -15,7 +15,7 @@ npm install manawallib
 </head>
 ```
 ### ตัวอย่างการใช้งาน
-การเรียกใช้งานคำสั่งต่างๆใน Mana Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง .initPageApi เป็นอันดับแรก เพื่อเป็นการแจ้งหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง หลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป    
+การเรียกใช้งานคำสั่งต่างๆใน Client Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง .initPageApi เป็นอันดับแรก เพื่อเป็นการแจ้งหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง หลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป    
 ```html
 <html>
     <head>
@@ -37,9 +37,9 @@ npm install manawallib
     </body>
 </html>
 ```
-## การติดตั้งและเรียกใช้งาน Mana Library ใน Ionic (รองรับการทำงานสำหรับ Ionic4)
+## การติดตั้งและเรียกใช้งาน Client Library ใน Ionic (รองรับการทำงานสำหรับ Ionic4)
 ### วิธีการติดตั้ง
-1.ติดตั้ง Mana Library ผ่าน Command prompt
+1.ติดตั้ง Client Library ผ่าน Command prompt
 ```
 npm install manawallib-ion
 ```
@@ -69,7 +69,7 @@ import { IonManaLib } from 'manawallib-ion';
 })
 ```
 ### ตัวอย่างการใช้งาน
-การเรียกใช้งานคำสั่งต่างๆใน Mana Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง .initPageApi เป็นอันดับแรก เพื่อเป็นการแจ้งหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง หลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป 
+การเรียกใช้งานคำสั่งต่างๆใน Client Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง .initPageApi เป็นอันดับแรก เพื่อเป็นการแจ้งหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง หลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป 
 ```typescript
 
 import { IonManaLib } from 'ion-m-lib';
