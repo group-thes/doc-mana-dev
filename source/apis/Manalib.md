@@ -1,7 +1,7 @@
 # Client library
 การแสดงหน้าเพจใน Mana มีองค์ประกอบที่สามารถแบ่งตามความสามารถได้ดังรูป    
 ![a](../img/API/manalib/manalibcom.PNG)      
-ฉะนั้นคำสั่งหรือความสามารถต่างๆที่มีใน Mana library จึงแบ่งได้ตามหัวข้อด้านล่าง
+ฉะนั้นคำสั่งหรือความสามารถต่างๆที่มีใน Client library จึงแบ่งได้ตามหัวข้อด้านล่าง
 ## Call API
 * Call API to Registered URL   
   * .getApiData : ดึงข้อมูลจาก Server โดยการส่งระบุหน้าที่ต้องการเปิด (mcontentId) เพื่อให้ Server ตอบกลับ   
