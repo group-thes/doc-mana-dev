@@ -3,13 +3,14 @@
 ![a](../img/API/manalib/manalibcom.PNG)      
 ฉะนั้นคำสั่งหรือความสามารถต่างๆที่มีใน Client library จึงแบ่งได้ตามหัวข้อด้านล่าง
 ## Call API
+การดึงข้อมูลเพื่อนำมาแสดงที่หน้าเพจ
 * Call API to Registered URL   
-  * .getApiData : ดึงข้อมูลจาก Server โดยการส่งระบุหน้าที่ต้องการเปิด (mcontentId) เพื่อให้ Server ตอบกลับ   
-  * .getApiDataWithEndpointId // ไม่มีตัวไหนเรียกใช้    
+  * `.getApiData` : ดึงข้อมูลจาก Server โดยการส่งระบุหน้าที่ต้องการเปิด (mcontentId) เพื่อให้ Server ตอบข้อมูลหน้านั้นกลับ   
+  * `.getApiDataWithEndpointId` // ไม่มีตัวไหนเรียกใช้    
 * Call Api to external    
-  * .callApiGet : ดึงข้อมูลจาก Server โดยระบุ URL ที่ได้ลงทะเบียนไว้กับ Mana  
-  * .callApiPost     // ไม่มีตัวไหนเรียกใช้  
-  * .callApiDelete    // ไม่มีตัวไหนเรียกใช้  
+  * `.callApiGet` : ดึงข้อมูลจาก Server โดยระบุ URL ที่ได้ลงทะเบียนไว้กับ Mana  
+  * `.callApiPost`     // ไม่มีตัวไหนเรียกใช้  
+  * `.callApiDelete`    // ไม่มีตัวไหนเรียกใช้  
 ```typescript
 export class DemoPage implements OnInit {
 
@@ -22,7 +23,7 @@ export class DemoPage implements OnInit {
         // ดึงข้อมูลโดยระบุหน้าเพื่อให้ Server ส่งข้อมูลหน้านั้นๆมาโดยตรง
         return this.svc.getApiData(this.mcontentid);
 
-        // ดึงข้อมูลโดยตรงผ่าน URL ที่ลงทะเบียน
+        // ดึงข้อมูลโดยตรงผ่าน URL ที่ได้ทำการลงทะเบียนเรียบร้อยแล้ว
         // return this.svc.callApiGet(this.mcontentid, this.apiUrl);
       })
   }
@@ -31,10 +32,10 @@ export class DemoPage implements OnInit {
 
 ## Form 
 เป็นรูปแบบของการกรอกข้อมูลเพื่อส่งข้อมูลเข้าไปประมวลผลในฝั่ง Server โดยมี Form ดังต่อไปนี้
-* .validForm : เป็นการตรวจสอบข้อมูลให้เป็นไปตามเงื่อนไขที่กำหนดเพื่อเปิด/ปิดการใช้งานของปุ่มตกลง
-* .submitFormData : ส่งข้อมูลที่ผ่านการตรวจสอบแล้วไปยัง Server
-* .confirmForm : แสดง Dlg ยืนยันการทำงานซึ่งจะได้รับค่า boolean กลับมา (resolve.isConfirm)
-* .submitFormDataWithEndpointId //อาจจะยังไม่ได้ใช้
+* `.validForm` : เป็นการตรวจสอบข้อมูลให้เป็นไปตามเงื่อนไขที่กำหนดเพื่อเปิด/ปิดการใช้งานของปุ่มตกลง
+* `.submitFormData` : ส่งข้อมูลที่ผ่านการตรวจสอบแล้วไปยัง Server
+* `.confirmForm` : แสดง Dlg ยืนยันการทำงานซึ่งจะได้รับค่า boolean กลับมา (resolve.isConfirm)
+* `.submitFormDataWithEndpointId` //ไม่เห็นหน้าไหนเรียกใช้
 
 ```typescript
 export class DemoPage implements OnInit {
@@ -76,8 +77,9 @@ export class DemoPage implements OnInit {
   }
 }  
 ```
-* .selectimage : เลือกรูปที่อยู่ในฟอร์ม //ex:merchant-profile-image-edit รอตัวใหม่ของพี่โต??
-* .optionDialog : เป็นการเปิดหน้าเพจที่เป็น Dialog ซึ่งเพจที่เปิดนั้นสามารถเป็นฟอร์มที่ให้กรอกข้อมูลได้หลายรูปแบบ
+
+* `.selectimage` : เลือกรูปที่อยู่ในฟอร์ม //ex:merchant-profile-image-edit รอตัวใหม่ของพี่โต??
+* `.optionDialog` : เป็นการเปิดหน้าเพจที่เป็น Dialog ซึ่งเพจที่เปิดนั้นสามารถเป็นฟอร์มที่ให้กรอกข้อมูลได้หลายรูปแบบ
 ```typescript
 export class DemoPage implements OnInit {
 
@@ -95,7 +97,8 @@ export class DemoPage implements OnInit {
   }
 }
 ```
-* .customNumpad : แสดงแป้นคีย์บอร์ดที่สามารถคีย์ได้เฉพาะตัวเลขเท่านั้น
+
+* `.customNumpad` : แสดงแป้นคีย์บอร์ดที่สามารถคีย์ได้เฉพาะตัวเลขเท่านั้น
 ```html
 ionic
     <ion-label for="customInputAmount">
@@ -108,10 +111,9 @@ html
     <input customInput="true" type="text" class="form-control" id="customInputAmount">
 ```
 
-
 ## GPS
-* Get GPS ใช้ gps หัวด้านบนของมานะ // ไม่เห็นหน้าที่เรียกใช้
-* .setGpsSection : ใช้กำหนดตำแหน่ง GPS ที่อยู่ใน body ด้านบนของมานะ
+* Get GPS ใช้ gps หัวด้านบนของมานะ // ไม่เห็นหน้าที่เรียกใช้ เอาออกมั้ย??
+* `.setGpsSection` : ใช้กำหนดตำแหน่ง GPS ที่อยู่ใน body ด้านบนของมานะ
 ```typescript
 export class DemoPage implements OnInit {
 
@@ -149,10 +151,10 @@ export class DemoPage implements OnInit {
     });
   }
 }
-  ```
+```
   
 ## ToolbarAction
-ปุ่มเมนู ShortCut ที่แสดงด้านบนขวาของแอพโดยจะทำงานตามฟังก์ชั่นที่ถูกเขียนไว้
+`.addToolbarAction` : ปุ่มเมนู ShortCut ที่แสดงด้านบนขวาของแอพโดยจะทำงานตามฟังก์ชั่นที่ถูกเขียนไว้
 ```typescript
 export class DemoPage implements OnInit {
 
@@ -160,11 +162,12 @@ export class DemoPage implements OnInit {
   constructor(private svc: IonManaLib) { }
 
   ionViewDidEnter() {
+  // สร้าง ShortCut ตามที่กำหนดในฟังก์ชั่น onTabToolbarItem   
   this.svc.addToolbarAction((action) => this.onTabToolbarItem(action));
   this.refreshCallBack();
   }
 
-  //Action ที่จะถูกนำไปแสดงในเพจซึ่งจะทำงานตามฟังก์ชั่นที่เขียนไว้
+  // ShortCut จะแสดงตาม Action ที่กำหนดไว้
   public onTabToolbarItem(action) {
     switch (action) {
       case "Add": this.Add(); break;
@@ -172,64 +175,55 @@ export class DemoPage implements OnInit {
     }
   }
 
-  //ฟังก์ชั่นการทำงานที่ถูกเขียนไว้ตาม Action 
+  //กำหนดการทำงานของแต่ละ Action
   public Add() {
-    if(this.createEnpointUrl) this.svc.visitEndpoint(this.mcontentid, this.createEnpointUrl);
+    // Do something
   }
-  
 }
-  ```
+```
 
 ## Navigation
-* .visitEndpoint : เป็นการเปิดหน้าเพจตาม URL ที่ได้ลงทะเบียนไว้กับ Mana
+* `.visitEndpoint` : เป็นการเปิดหน้าเพจตาม URL ที่ได้ลงทะเบียนไว้กับ Mana
 ```typescript
 export class DemoPage implements OnInit {
 
   constructor(private svc: IonManaLib) { }
 
-  public onManage() {
+  public onSelectItem() {
     this.svc.visitEndpoint(this.mcontentid, "https://s.manal.ink/np/neaclst-home");
   }
 }  
 ```   
-* .callTrigger //กดปุ่มเพื่อ call fc. //อาจจะไม่ได้ใช้
-## Currency ex:shopping-cart-pay
-เป็นการแสดงจำนวนเงินโดยสามารถกำหนด ได้ว่าจะแสดงแค่ตัวเลข, สกุลเงิน หรือแสดงทั้งหมด     
 
-<!-- ```typescript
-  console.log(this.svc.getAmount({THB:204})); // 204
-  console.log(this.svc.getCurrency({THB:204}); // THB
-  console.log(this.svc.getMonetaryDisplay({THB:204}); // 204 THB
-``` -->
-
+* `.callTrigger` //กดปุ่มเพื่อ call fc. //พี่พีบอกอาจจะไม่ได้ใช้ เอาออกก่อน??
+## Currency
+เป็นการแสดงจำนวนเงินโดยสามารถกำหนด ได้ว่าจะแสดงแค่ตัวเลข, สกุลเงิน หรือแสดงทั้งหมด
+* `.getAmount` : แสดงเฉพาะตัวเลข      
+* `.getCurrency` : แสดงเฉพาะสกลุเงิน      
+* `.getMonetaryDisplay` : แสดงทั้งตัวเลขและสกุลเงิน      
 ```typescript
 export class DemoPage implements OnInit {
 
   public amount = {THB: 204};
   constructor(private svc: IonManaLib) { }
   
-  public GetAmount(value: any) { 
-    return this.svc.getAmount(this.amount); 
+  public GetAmount() { 
+    console.log(this.svc.getAmount(this.amount)); // 204  
   }
 
-  public GetCurrency(value: any) { 
-    return this.svc.getCurrency((this.amount); 
+  public GetCurrency() { 
+    console.log(this.svc.getCurrency((this.amount)); // THB
   }
-  // getDisplay
-  public GetMonetaryDisplay(value: any) { 
-    return this.svc.getMonetaryDisplay((this.amount); 
+  // ไม่แน่ใจว่าใช้ชิื่อฟังก์ชั่นนี้แทนรึเปล่า getDisplay เพราะหาใน lib ไม่เจอ
+  public GetMonetaryDisplay() { 
+    console.log(this.svc.getMonetaryDisplay((this.amount)); // 204 THB
   }
 }
-
-  // This code example produces the following output:
-  console.log(this.svc.getAmount(this.amount)); // 204
-  console.log(this.svc.getCurrency((this.amount)); // THB
-  console.log(this.svc.getMonetaryDisplay((this.amount)); // 204 THB
 ```
+
 ## Etc.
-* .setButtonVisibility //ทำให้ปุ่มหาย ยังไม่เห็นหน้าไหนเรียกใช้
-* .setStateChangedHandler  
-เมื่อแอพได้รับ Notification หรือ SignalR หน้าๆนั้นจะทำการแสดงข้อมูลตามฟังก์ชั่นที่เขียนไว้
+* `.setButtonVisibility` //ทำให้ปุ่มหาย ยังไม่เห็นหน้าไหนเรียกใช้ เอาออกก่อน??
+* `.setStateChangedHandler` : เมื่อแอพได้รับ Notification หรือ SignalR หน้าๆนั้นจะทำการแสดงข้อมูลตามฟังก์ชั่นที่เขียนไว้
 ```typescript
 export class DemoPage implements OnInit {
 
@@ -237,32 +231,46 @@ export class DemoPage implements OnInit {
 
   ionViewDidEnter() {
     this.svc.setStateChangedHandler((param) => this.OnStateChanged(param));
-    this.refreshCallBack();
   }
 
-    OnStateChanged(state: string) {
-      // TODO
+  OnStateChanged(state: string) {
+      //  Do something
   }
 }  
 ```    
-* .initPageApiWithCallBack   
-หากมีการ Navigate ไปหน้าอื่นและมีการกลับมาที่หน้าเดิมอีกครั้งจะสั่งให้หน้าเพจทำอะไรต่อ หรือหากมีการพับแอพลงเมื่อเปิดแอพขึ้นมาอีกครั้งหน้าที่ถูกเปิดค้างไว้จะให้ทำอะไรต่อ
+
+* `.initPageApiWithCallBack` : หากมีการ Navigate ไปหน้าอื่นและมีการกลับมาที่หน้าเดิมอีกครั้งจะสั่งให้ทำงานอะไรต่อ หรือหากมีการพับแอพลงเมื่อเปิดแอพขึ้นมาอีกครั้งหน้าที่ถูกเปิดค้างไว้จะให้ทำงานอะไรต่อ
 ```typescript
 export class DemoPage implements OnInit {
 
   constructor(private svc: IonManaLib) { }
 
   private loadData$() {
-    // ในที่นี้คือทำตามคำสั่งที่ของฟังก์ชั่น refreshCallBack
+    // หลังโดนพับแอพและเปิดขึ้นมาอีกครั้งหรือกลับเข้ามาที่หน้าหลังจากไปเปิดหน้าอื่นจะทำงานตามฟังก์ชั่น refreshCallBack
     return this.svc.initPageApiWithCallBack(this.mcontentid, () => this.refreshCallBack())
       .then(_ => {
-        return this.svc.callApiGet(this.mcontentid, this.apiUrl);
+        return this.svc.getApiData(this.mcontentid);
       })
   }
+
+  refreshCallBack() {
+    // Do something
+  }  
 }  
 ```      
-* .initPageApi : ระบุหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง
 
+* `.initPageApi` : ระบุหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมแสดงข้อมูลของหน้าที่ระบุได้อย่างถูกต้อง
+```typescript
+export class DemoPage implements OnInit {
 
-https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.find?view=net-5.0
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length
+  constructor(private svc: IonManaLib) { }
+
+  private loadData$() {
+    // แนะนำให้เรียกใช้งานเป็นอันดับแรกก่อนการทำงานอื่นๆ
+    return this.svc.initPageApi(this.mcontentid)
+      .then(_ => {
+        return this.svc.getApiData(this.mcontentid);
+      })
+  }
+}
+```
