@@ -14,13 +14,15 @@
 ```typescript
 export class DemoPage implements OnInit {
 
+  private mcontentid = "demo";
   constructor(private svc: IonManaLib) { }
 
   private loadData$() {
+    // เตรียมของในหน้าให้พร้อมใช้งาน
     return this.svc.initPageApi(this.mcontentid)
       .then(_ => {
 
-        // ดึงข้อมูลโดยระบุหน้าเพื่อให้ Server ส่งข้อมูลหน้านั้นๆมาโดยตรง
+        // ดึงข้อมูลจาก Server ของหน้าที่ระบุไว้
         return this.svc.getApiData(this.mcontentid);
 
         // ดึงข้อมูลโดยตรงผ่าน URL ที่ได้ทำการลงทะเบียนเรียบร้อยแล้ว
@@ -33,9 +35,9 @@ export class DemoPage implements OnInit {
 ## Form 
 เป็นรูปแบบของการกรอกข้อมูลเพื่อส่งข้อมูลเข้าไปประมวลผลในฝั่ง Server โดยมี Form ดังต่อไปนี้
 * `.validForm` : เป็นการตรวจสอบข้อมูลให้เป็นไปตามเงื่อนไขที่กำหนดเพื่อเปิด/ปิดการใช้งานของปุ่มตกลง
-* `.submitFormData` : ส่งข้อมูลที่ผ่านการตรวจสอบแล้วไปยัง Server
+* `.submitFormData` : ส่งข้อมูลไปยัง Server
 * `.confirmForm` : แสดง Dlg ยืนยันการทำงานซึ่งจะได้รับค่า boolean กลับมา (resolve.isConfirm)
-* `.submitFormDataWithEndpointId` //ไม่เห็นหน้าไหนเรียกใช้
+* `.submitFormDataWithEndpointId` // ยังไม่เห็นหน้าไหนเรียกใช้ เอาออกก่อน??
 
 ```typescript
 export class DemoPage implements OnInit {
@@ -58,12 +60,12 @@ export class DemoPage implements OnInit {
       "<span style=\"color: Black; \">คุณต้องการ" + msg + "</span>"
     );
 
-    // 
+    // เปิด Dialog โดยแสดงข้อความตามที่ถูก Set ไว้
     this.svc.confirmForm(message).then(resolve => {
       if (resolve.isConfirm) {
         let isAgree = this.fg.get("isAgree").value;
         this.fg.get("isAgree").setValue(isAgree == "true");
-        // ส่งข้อมูลที่ได้รับไปยัง Server
+        // ส่งข้อมูลไปยัง Server
         this.svc.submitFormData(this.mcontentid, this.fg.value);
       }
     });
@@ -78,20 +80,58 @@ export class DemoPage implements OnInit {
 }  
 ```
 
-* `.selectimage` : เลือกรูปที่อยู่ในฟอร์ม //ex:merchant-profile-image-edit รอตัวใหม่ของพี่โต??
-* `.optionDialog` : เป็นการเปิดหน้าเพจที่เป็น Dialog ซึ่งเพจที่เปิดนั้นสามารถเป็นฟอร์มที่ให้กรอกข้อมูลได้หลายรูปแบบ
+* `.selectImage` : เลือกรูปที่อยู่ในฟอร์ม //ex:merchant-profile-image-edit รอตัวใหม่ของพี่โต??
+* `.showOptionDialog` : คำสั่งเปิด Dialog โดยต้องระบุ Id ของหน้าที่จะใช้เป็น Dialog และส่งค่า DefaultValue ไปด้วย
+* `.initOptionDialog` : เตรียมหน้าให้พร้อมสำหรับแสดงข้อมูลใน Dialog โดยมีข้อมูล DefaultValue ที่ถูกส่งมาจากหน้าก่อนหน้านี้
 ```typescript
 export class DemoPage implements OnInit {
 
+  private mcontentid: string = "demo";
   constructor(private svc: IonManaLib) { }
 
   openMobileDialog() {
-    let defaultValue = { mobile: this.fg.get("mobile").value };
-    let mcid_optiondialog = "demo";
-    this.svc.showOptionDialog(mcid_optiondialog, defaultValue).then((response) => {
+    let mcid_optiondialog = "openDialog";
+    //สั่งเปิด Dialog โดยระบุหน้าที่จะเปิดและกำหนดค่า DefaultValue ส่งไปด้วย
+    this.svc.showOptionDialog(mcid_optiondialog, {}).then((response) => {
       let status = response.isOk ? "ok" : "cancel";
       if (status == "ok") {
-        // do something
+        // Do something
+      }
+    });
+  }
+}
+
+// -----------------------------------------
+
+export class OpenDialogPage implements OnInit {
+
+  private mcontentid: string = "openDialog";
+  constructor(private svc: IonManaLib) { }
+
+  // คำสั่งพื้นฐานที่ทุกหน้าควรจะใช้ในการเตรียมหน้าเพจและดึงข้อมูลจาก Server
+  private loadData$() {
+    return this.svc.initPageApi(this.mcontentid)
+      .then(_ => {
+        return this.svc.getApiData(this.mcontentid);
+      })
+  }
+
+  private loadDefault$() {
+    // เตรียมของในหน้าให้พร้อมสำหรับเรียกคำสั่งเปิด Dialog
+    return this.svc.initPageApi(this.mcontentid)
+      .then(_ => {
+        return this.initOptionDialog$();
+      })
+  }
+
+  private initOptionDialog$() {
+    // แสดง Dialog โดยรับข้อมูล DefaultValue ที่ส่งมา และเมื่อทำงานในหน้านี้เสร็จจึงส่งข้อมูลกลับไปที่หน้าเพจเพื่อทำงานต่อ
+    return this.svc.initOptionDialog(this.mcontentid, (response) => {
+      if (response == "ok") {
+        // Do something
+      }
+      else {
+        // Do something
       }
     });
   }
@@ -112,8 +152,8 @@ html
 ```
 
 ## GPS
-* Get GPS ใช้ gps หัวด้านบนของมานะ // ไม่เห็นหน้าที่เรียกใช้ เอาออกมั้ย??
-* `.setGpsSection` : ใช้กำหนดตำแหน่ง GPS ที่อยู่ใน body ด้านบนของมานะ
+* `.getGpsLocation` ใช้ gps หัวด้านบนของมานะ // ยังไม่เห็นหน้าไหนเรียกใช้ เอาออกก่อน??
+* `.setGpsSection` : ใช้กำหนดตำแหน่ง GPS ที่อยู่ในแสดงใน Content ด้านบนของมานะ
 ```typescript
 export class DemoPage implements OnInit {
 
@@ -124,6 +164,7 @@ export class DemoPage implements OnInit {
     this.formData$ = load$;
     load$.then(it => {
       let location = it.address.location;
+      //ตั้งค่า GPS 
       this.svc.setGpsSection(location.title, location.realm, location.subDistrict, location.district, location.province, location.postalCode, location.accuracy, location.geolocation.latitude, location.geolocation.longitude, location.phoneNumber, location.remark);
       this.hasLoaded = it ? "y" : "n";
     });
@@ -133,7 +174,7 @@ export class DemoPage implements OnInit {
 ``` 
 
 ## Title
-เป็นการกำหนดหัวเรื่อง/ชื่อหน้า ให้กับเพจนั้นๆ ซึ่งโดยทั่วไปสามารถกำหนดหัวเรื่องได้จาก html โดยตรงหรือกำหนดจากข้อมูลที่ได้รับจากฝั่ง Server ซึ่งหากเป็นอย่างหลังจำเป็นจะต้องเรียกใช้คำสั่ง .initPageApi อีกครั้งหลังได้รับข้อมูลเพื่อทำการ Set tiltle ให้กับหน้านั้นๆ
+เป็นการกำหนดหัวเรื่อง/ชื่อหน้า ให้กับเพจนั้นๆ ซึ่งโดยทั่วไปสามารถกำหนดหัวเรื่องได้จาก html โดยตรงหรือกำหนดจากข้อมูลที่ได้รับจากฝั่ง Server ซึ่งหากเป็นอย่างหลังจำเป็นจะต้องเรียกใช้คำสั่ง `.initPageApi` อีกครั้งหลังได้รับข้อมูลเพื่อทำการ Set tiltle ให้กับหน้านั้นๆ
 ```typescript
 export class DemoPage implements OnInit {
 
@@ -141,7 +182,7 @@ export class DemoPage implements OnInit {
   private mcontentid = "merchant";
   constructor(private svc: IonManaLib) { }
 
-  refreshCallBack() {
+  ionViewDidEnter() {
     let load$ = this.loadData$();
     this.data$ = load$;
     load$.then((it: any) => {
@@ -200,7 +241,8 @@ export class DemoPage implements OnInit {
 เป็นการแสดงจำนวนเงินโดยสามารถกำหนด ได้ว่าจะแสดงแค่ตัวเลข, สกุลเงิน หรือแสดงทั้งหมด
 * `.getAmount` : แสดงเฉพาะตัวเลข      
 * `.getCurrency` : แสดงเฉพาะสกลุเงิน      
-* `.getMonetaryDisplay` : แสดงทั้งตัวเลขและสกุลเงิน      
+* `.getMonetaryDisplay` : แสดงทั้งตัวเลขและสกุลเงิน   // ไม่แน่ใจว่าใช้ชิื่อฟังก์ชั่นนี้แทนรึเปล่า .getDisplay เพราะหาใน lib ไม่เจอ
+      
 ```typescript
 export class DemoPage implements OnInit {
 
@@ -214,7 +256,7 @@ export class DemoPage implements OnInit {
   public GetCurrency() { 
     console.log(this.svc.getCurrency((this.amount)); // THB
   }
-  // ไม่แน่ใจว่าใช้ชิื่อฟังก์ชั่นนี้แทนรึเปล่า getDisplay เพราะหาใน lib ไม่เจอ
+
   public GetMonetaryDisplay() { 
     console.log(this.svc.getMonetaryDisplay((this.amount)); // 204 THB
   }
@@ -259,16 +301,18 @@ export class DemoPage implements OnInit {
 }  
 ```      
 
-* `.initPageApi` : ระบุหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมแสดงข้อมูลของหน้าที่ระบุได้อย่างถูกต้อง
+* `.initPageApi` : ระบุหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลของหน้าที่ระบุได้อย่างถูกต้อง
 ```typescript
 export class DemoPage implements OnInit {
 
+  private mcontentid = "demo";
   constructor(private svc: IonManaLib) { }
 
   private loadData$() {
-    // แนะนำให้เรียกใช้งานเป็นอันดับแรกก่อนการทำงานอื่นๆ
+    // ระบุหน้าที่ต้องการและ Set ของให้พร้อมใช้งาน
     return this.svc.initPageApi(this.mcontentid)
       .then(_ => {
+        // ทำการดึงข้อมูลจาก Server
         return this.svc.getApiData(this.mcontentid);
       })
   }
