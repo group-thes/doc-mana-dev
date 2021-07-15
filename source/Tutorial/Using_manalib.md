@@ -15,7 +15,7 @@ npm install manawallib
 </head>
 ```
 ### ตัวอย่างการใช้งาน
-การเรียกใช้งานคำสั่งต่างๆใน Client Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง .initPageApi เป็นอันดับแรก เพื่อเป็นการแจ้งหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง หลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป    
+การเรียกใช้งานคำสั่งต่างๆใน Client Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง `.initPageApi` เป็นอันดับแรก เพื่อเป็นการแจ้งหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง หลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป    
 ```html
 <html>
     <head>
@@ -26,6 +26,7 @@ npm install manawallib
             var lib;
             $(document).ready(async function () {
                 lib = await manawallib.GetLib();
+                // เตรียมของในหน้าให้พร้อมใช้งาน
                 await lib.initPageApi("mcontentId");
                 var result = await lib.getApiData("mcontentId");
             });
@@ -71,7 +72,7 @@ import { IonManaLib } from 'manawallib-ion';
 })
 ```
 ### ตัวอย่างการใช้งาน
-การเรียกใช้งานคำสั่งต่างๆใน Client Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง .initPageApi เป็นอันดับแรก เพื่อเป็นการแจ้งหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง หลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป 
+การเรียกใช้งานคำสั่งต่างๆใน Client Library ทาง mana แนะนำให้เรียกใช้งานคำสั่ง `.initPageApi` เป็นอันดับแรก เพื่อเป็นการแจ้งหน้าที่จะใช้งานให้กับ Server เพื่อที่จะได้เตรียมข้อมูลมาแสดงได้อย่างถูกต้อง หลังจากนั้นจึงเรียกใช้งานคำสั่งอื่นๆในลำดับต่อไป 
 ```typescript
 
 import { IonManaLib } from 'ion-m-lib';
@@ -80,6 +81,7 @@ public mcontentid = "user-profile";
 constructor(private svc: IonManaLib) { }
 
 private loadData$() {
+    // เตรียมของในหน้าให้พร้อมใช้งาน
     return this.svc.initPageApi(this.mcontentid).then(() => {
     return this.svc.getApiData(this.mcontentid);})
 }
