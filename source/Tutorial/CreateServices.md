@@ -4,7 +4,7 @@
 
 1.เข้ามาที่เมนู Profile ทำการ Copy ค่า baid
 
-![a](../img/Tutorial/createService/baid.png)
+![a](../img/Tutorial/createService/baid.PNG)
 
 
 2.เลือกหมวด [API Service Management](../apis/APIs.md) เลือก Create Service และ Try it
